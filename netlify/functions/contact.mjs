@@ -1,25 +1,28 @@
-export default async function handler(req, res) {
+// Netlify Function (v2) — contact form handler for nearblack.com.
+// Sends an internal notification + a client confirmation via Resend.
+// Requires the RESEND_API_KEY environment variable (set in Netlify site settings).
+
+export default async (req) => {
   const allowedOrigin = "https://nearblack.com";
+  const cors = {
+    "Access-Control-Allow-Origin": allowedOrigin,
+    "Access-Control-Allow-Methods": "POST, OPTIONS",
+    "Access-Control-Allow-Headers": "Content-Type",
+  };
 
   if (req.method === "OPTIONS") {
-    res.setHeader("Access-Control-Allow-Origin", allowedOrigin);
-    res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
-    res.setHeader("Access-Control-Allow-Headers", "Content-Type");
-    return res.status(204).end();
+    return new Response(null, { status: 204, headers: cors });
   }
 
   if (req.method !== "POST") {
-    return res.status(405).json({ error: "Method not allowed." });
+    return json({ error: "Method not allowed." }, 405, cors);
   }
 
-  res.setHeader("Access-Control-Allow-Origin", allowedOrigin);
-  res.setHeader("Content-Type", "application/json");
-
   try {
-    const { name, business, email, url, engagement, message } = req.body;
+    const { name, business, email, url, engagement, message } = await req.json();
 
     if (!url || !email) {
-      return res.status(400).json({ error: "Website URL and email are required." });
+      return json({ error: "Website URL and email are required." }, 400, cors);
     }
 
     const firstName = name ? escape(name.split(" ")[0]) : "";
@@ -108,7 +111,7 @@ export default async function handler(req, res) {
     });
 
     if (!sendRes.ok) {
-      return res.status(500).json({ error: "Failed to send email." });
+      return json({ error: "Failed to send email." }, 500, cors);
     }
 
     // Confirmation email to the submitter
@@ -126,10 +129,17 @@ export default async function handler(req, res) {
       }),
     });
 
-    return res.status(200).json({ success: true });
+    return json({ success: true }, 200, cors);
   } catch (e) {
-    return res.status(500).json({ error: "Server error." });
+    return json({ error: "Server error." }, 500, cors);
   }
+};
+
+function json(obj, status, cors) {
+  return new Response(JSON.stringify(obj), {
+    status,
+    headers: { ...cors, "Content-Type": "application/json" },
+  });
 }
 
 function escape(str) {
