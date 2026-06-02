@@ -492,9 +492,12 @@ footer ul a:hover{opacity:1}
 }
 
 /* ------------------ OBX case-study gallery: full-page screenshots, shown whole (no crop) ------------------ */
-.cs-gallery.obxhs-gallery{grid-template-columns:1fr!important;max-width:900px;gap:40px}
-.cs-gallery.obxhs-gallery img{aspect-ratio:auto!important;height:auto!important;width:100%;object-fit:contain;border-radius:6px}
-.cs-gallery.obxhs-gallery img:first-child{grid-column:span 1!important;aspect-ratio:auto!important}
+.cs-gallery.obxhs-gallery{grid-template-columns:1fr 1fr 1fr;max-width:1600px;gap:20px}
+.cs-gallery.obxhs-gallery img{aspect-ratio:4/3;object-fit:cover;object-position:top;height:auto;width:100%}
+.cs-gallery.obxhs-gallery img:first-child{grid-column:span 1;aspect-ratio:4/3}
+/* OBX before/after: after-hero is wider than the default 16:11 box, so match the box to it (no side-crop) */
+.obxhs-ba .ba-img{aspect-ratio:1600/732}
+.obxhs-ba .ba-img img{object-position:center}
 
 /* OBX case-study hero: image is wider than 16:9 after cropping the white strip - show it whole, no side-crop */
 .cs-hero-image.obxhs-hero{aspect-ratio:auto!important}
