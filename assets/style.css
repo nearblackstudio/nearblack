@@ -1,4 +1,4 @@
-/* —————————————————— NEARBLACK · KOTO.COM STYLE —————————————————— */
+/* ------------------ NEARBLACK · KOTO.COM STYLE ------------------ */
 :root{
   --bg:#000000;
   --bg-2:#0a0a0a;
@@ -18,7 +18,7 @@ img{display:block;max-width:100%;height:auto}
 button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
 ::selection{background:var(--fg);color:var(--bg)}
 
-/* —————————————————— NAV —————————————————— */
+/* ------------------ NAV ------------------ */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:28px 32px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;background:var(--bg);border-bottom:1px solid var(--line)}
 .cta-nav{justify-self:end}
 .brand{font-family:var(--display);font-size:20px;font-weight:800;letter-spacing:-.035em;color:var(--fg)}
@@ -29,7 +29,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:28px 32px;display:gr
 .cta-nav{font-family:var(--display);font-weight:500;font-size:14px;letter-spacing:-.005em;color:var(--fg);border:1px solid var(--line-strong);padding:10px 20px;border-radius:999px;transition:all .2s}
 .cta-nav:hover{background:var(--fg);color:var(--bg);border-color:var(--fg)}
 
-/* —————————————————— MOBILE NAV —————————————————— */
+/* ------------------ MOBILE NAV ------------------ */
 .nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:4px;z-index:110;position:relative}
 .nav-toggle span{display:block;width:22px;height:2px;background:var(--fg);transition:transform .3s,opacity .2s;margin:5px 0}
 .nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
@@ -48,16 +48,16 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:28px 32px;display:gr
   .mobile-menu .mob-cta{font-size:14px;font-weight:500;letter-spacing:-.005em;margin-top:40px;padding:18px 42px;border:1px solid var(--line-strong);border-radius:999px;opacity:1;width:auto}
 }
 
-/* —————————————————— TYPOGRAPHY —————————————————— */
+/* ------------------ TYPOGRAPHY ------------------ */
 .display{font-family:var(--display);font-weight:500;line-height:1.02;letter-spacing:-.025em;color:var(--fg)}
 .display em,.display i{font-style:normal;font-weight:400;color:var(--mute-2)}
 .eyebrow{font-family:var(--display);font-size:12px;font-weight:500;letter-spacing:-.005em;color:var(--mute-2);display:inline-flex;align-items:center;gap:14px}
 .eyebrow::before{content:"";width:28px;height:1px;background:var(--mute)}
 
-/* —————————————————— HERO (KOTO-STYLE: SMALL, BOTTOM-LEFT) —————————————————— */
+/* ------------------ HERO (KOTO-STYLE: SMALL, BOTTOM-LEFT) ------------------ */
 .hero{min-height:100vh;padding:120px 32px 48px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;background:var(--bg)}
 
-/* hero with video — video on top, content below */
+/* hero with video - video on top, content below */
 .hero-video{padding:88px 0 0;justify-content:flex-start;min-height:auto}
 .hero-bg{width:100%;height:62vh;object-fit:cover;object-position:center;display:block;background:var(--bg)}
 .hero-video .hero-content{padding:48px 32px 16px;display:flex;flex-direction:column;justify-content:flex-end;flex:1}
@@ -80,14 +80,14 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:28px 32px;display:gr
 .hero-sm h1 em,.hero-sm h1 i{font-style:normal;font-weight:400;color:var(--mute-2)}
 .hero-sm .lede{margin-top:36px;max-width:60ch;font-size:15px;line-height:1.65;color:var(--mute-2)}
 
-/* —————————————————— MARQUEE —————————————————— */
+/* ------------------ MARQUEE ------------------ */
 .marquee{overflow:hidden;padding:24px 0;background:var(--bg);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .marquee-inner{display:flex;gap:32px;white-space:nowrap;animation:scroll 44s linear infinite;font-family:var(--display);font-size:clamp(20px,2.2vw,36px);font-weight:500;letter-spacing:-.02em;width:max-content;line-height:1;color:var(--fg)}
 .marquee-inner span{display:inline-flex;align-items:center;gap:48px}
 .marquee-inner i{font-style:normal;font-weight:300;color:var(--mute-2)}
 @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
-/* —————————————————— SECTIONS —————————————————— */
+/* ------------------ SECTIONS ------------------ */
 section{padding:140px 32px;border-bottom:1px solid var(--line);position:relative;background:var(--bg)}
 .wrap{max-width:1440px;margin:0 auto}
 .wrap-sm{max-width:1120px;margin:0 auto}
@@ -95,12 +95,12 @@ section{padding:140px 32px;border-bottom:1px solid var(--line);position:relative
 .section-title{font-family:var(--display);font-weight:500;font-size:clamp(22px,2.2vw,36px);line-height:1.2;letter-spacing:-.015em;max-width:72ch;margin-bottom:56px;color:var(--fg)}
 .section-title em,.section-title i{font-style:normal;font-weight:400;color:var(--mute-2)}
 
-/* —————————————————— MANIFESTO GRID —————————————————— */
+/* ------------------ MANIFESTO GRID ------------------ */
 .manifesto-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px 100px;margin-top:32px}
 .manifesto-grid p{font-family:var(--display);font-size:clamp(18px,1.6vw,26px);font-weight:500;line-height:1.35;letter-spacing:-.012em;color:var(--fg)}
 .manifesto-grid p em{font-style:normal;font-weight:400;color:var(--mute-2)}
 
-/* —————————————————— WORK GRID (KOTO-STYLE) —————————————————— */
+/* ------------------ WORK GRID (KOTO-STYLE) ------------------ */
 .work-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:32px 24px;margin-top:40px}
 .project{grid-column:span 6;display:block;cursor:pointer;position:relative}
 .project.wide{grid-column:span 12}
@@ -119,12 +119,12 @@ section{padding:140px 32px;border-bottom:1px solid var(--line);position:relative
 .project-tag{font-family:var(--display);font-weight:500;font-size:11px;letter-spacing:-.005em;color:var(--mute-2);text-transform:uppercase;white-space:nowrap;margin-top:2px}
 .project-info{flex:1}
 
-/* —————————————————— STATEMENT —————————————————— */
+/* ------------------ STATEMENT ------------------ */
 .statement{padding:200px 32px;border-bottom:1px solid var(--line)}
 .statement-title{font-family:var(--display);font-weight:500;font-size:clamp(64px,10vw,200px);line-height:.92;letter-spacing:-.04em;max-width:24ch;margin:0 auto;color:var(--fg)}
 .statement-title em{font-style:normal;font-weight:300;color:var(--mute-2)}
 
-/* —————————————————— PRICING TIERS —————————————————— */
+/* ------------------ PRICING TIERS ------------------ */
 .tier{display:grid;grid-template-columns:60px 1fr 1.5fr 220px;gap:40px;padding:48px 0;border-top:1px solid var(--line);align-items:flex-start;transition:padding .3s}
 .tier:last-child{border-bottom:1px solid var(--line)}
 .tier:hover{padding-left:24px}
@@ -135,12 +135,12 @@ section{padding:140px 32px;border-bottom:1px solid var(--line);position:relative
 .tier-desc b{display:block;margin-bottom:14px;font-family:var(--display);font-weight:500;font-size:13px;color:var(--fg);letter-spacing:-.005em;text-transform:uppercase}
 .tier-desc ul{margin-top:14px;list-style:none;display:flex;flex-direction:column;gap:6px}
 .tier-desc ul li{color:var(--mute-2)}
-.tier-desc ul li::before{content:"— ";color:var(--fg)}
+.tier-desc ul li::before{content:"· ";color:var(--fg)}
 .tier-meta{text-align:right}
 .tier-price{font-family:var(--display);font-size:clamp(32px,3.2vw,52px);font-weight:500;letter-spacing:-.022em;line-height:1;color:var(--fg)}
 .tier-delivery{font-family:var(--display);font-weight:500;font-size:11px;color:var(--mute-2);text-transform:uppercase;letter-spacing:-.005em;margin-top:14px}
 
-/* —————————————————— PROCESS STEPS —————————————————— */
+/* ------------------ PROCESS STEPS ------------------ */
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:40px;margin-top:40px}
 .step{border-top:1px solid var(--line);padding-top:32px}
 .step-num{font-family:var(--display);font-size:13px;font-weight:500;color:var(--mute-2);margin-bottom:32px;letter-spacing:-.005em}
@@ -148,7 +148,7 @@ section{padding:140px 32px;border-bottom:1px solid var(--line);position:relative
 .step h3 em{font-style:normal;font-weight:400;color:var(--mute-2)}
 .step p{font-size:14px;line-height:1.65;color:var(--mute-2)}
 
-/* —————————————————— ADD-ONS —————————————————— */
+/* ------------------ ADD-ONS ------------------ */
 .addon-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:40px}
 .addon{background:var(--bg);padding:48px 36px;display:flex;flex-direction:column;gap:14px;min-height:220px;justify-content:space-between;transition:background .3s}
 .addon:hover{background:var(--bg-2)}
@@ -157,13 +157,13 @@ section{padding:140px 32px;border-bottom:1px solid var(--line);position:relative
 .addon-price{font-family:var(--display);font-size:16px;font-weight:500;letter-spacing:-.015em;margin-top:auto;color:var(--fg)}
 .addon-badge{display:inline-block;font-family:var(--display);font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--bg);background:var(--fg);padding:4px 10px;border-radius:3px;margin-bottom:4px}
 
-/* —————————————————— QUOTE —————————————————— */
+/* ------------------ QUOTE ------------------ */
 .quote{padding:140px 32px;text-align:center;border-bottom:1px solid var(--line);background:var(--bg)}
 .quote blockquote{font-family:var(--display);font-weight:500;font-size:clamp(28px,3vw,44px);line-height:1.15;letter-spacing:-.018em;max-width:36ch;margin:0 auto;color:var(--fg)}
 .quote blockquote em{font-style:normal;font-weight:400;color:var(--mute-2)}
 .quote cite{display:block;margin-top:40px;font-family:var(--display);font-size:12px;font-weight:500;letter-spacing:-.005em;text-transform:uppercase;color:var(--mute-2);font-style:normal}
 
-/* —————————————————— STATS —————————————————— */
+/* ------------------ STATS ------------------ */
 .stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .stat{padding:48px 32px;border-right:1px solid var(--line)}
 .stat:last-child{border-right:none}
@@ -171,7 +171,7 @@ section{padding:140px 32px;border-bottom:1px solid var(--line);position:relative
 .stat-num em{font-style:normal;font-weight:400;color:var(--mute-2)}
 .stat-label{font-family:var(--display);font-size:11px;font-weight:500;letter-spacing:-.005em;text-transform:uppercase;color:var(--mute-2);margin-top:16px}
 
-/* —————————————————— CASE STUDY —————————————————— */
+/* ------------------ CASE STUDY ------------------ */
 .cs-hero{padding:180px 32px 80px;border-bottom:1px solid var(--line)}
 .cs-hero h1{font-family:var(--display);font-weight:500;font-size:clamp(36px,4.5vw,72px);line-height:1.05;letter-spacing:-.022em;margin-top:24px;color:var(--fg);overflow-wrap:anywhere;word-break:break-word}
 .cs-hero h1 em{font-style:normal;font-weight:400;color:var(--mute-2)}
@@ -192,11 +192,11 @@ section{padding:140px 32px;border-bottom:1px solid var(--line);position:relative
 .cs-gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;border:1px solid var(--line)}
 .cs-gallery img:first-child{grid-column:span 2;aspect-ratio:21/9}
 
-/* —————————————————— FEATURE IMAGE —————————————————— */
+/* ------------------ FEATURE IMAGE ------------------ */
 .feature-image{aspect-ratio:21/8;overflow:hidden;background:var(--bg-2)}
 .feature-image img{width:100%;height:100%;object-fit:cover}
 
-/* —————————————————— SPLIT —————————————————— */
+/* ------------------ SPLIT ------------------ */
 .split{display:grid;grid-template-columns:1fr 1fr;gap:96px;align-items:center}
 .split-img{aspect-ratio:4/5;overflow:hidden;background:var(--bg-2);border:1px solid var(--line)}
 .split-img img{width:100%;height:100%;object-fit:cover}
@@ -204,7 +204,7 @@ section{padding:140px 32px;border-bottom:1px solid var(--line);position:relative
 .split h2 em{font-style:normal;font-weight:400;color:var(--mute-2)}
 .split p{font-size:15px;line-height:1.7;margin-top:24px;max-width:46ch;color:var(--mute-2)}
 
-/* —————————————————— JOURNAL —————————————————— */
+/* ------------------ JOURNAL ------------------ */
 .journal-list{margin-top:40px}
 .journal-entry{display:grid;grid-template-columns:140px 1fr 1fr 180px;gap:40px;padding:56px 0;border-top:1px solid var(--line);align-items:flex-start;transition:padding .3s}
 .journal-entry:last-child{border-bottom:1px solid var(--line)}
@@ -215,7 +215,7 @@ section{padding:140px 32px;border-bottom:1px solid var(--line);position:relative
 .journal-excerpt{font-size:15px;line-height:1.7;max-width:48ch;color:var(--mute-2)}
 .journal-cat{font-family:var(--display);font-size:12px;font-weight:500;letter-spacing:-.005em;text-transform:uppercase;color:var(--mute-2);text-align:right}
 
-/* —————————————————— CONTACT —————————————————— */
+/* ------------------ CONTACT ------------------ */
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:120px;max-width:1320px;margin:0 auto}
 .contact-info h2{font-family:var(--display);font-weight:500;font-size:clamp(32px,3.4vw,52px);line-height:1.02;letter-spacing:-.022em;color:var(--fg)}
 .contact-info h2 em{font-style:normal;font-weight:400;color:var(--mute-2)}
@@ -236,14 +236,14 @@ section{padding:140px 32px;border-bottom:1px solid var(--line);position:relative
 .form-error{font-family:var(--body);font-size:12px;color:#c44;margin-top:4px;display:none}
 .form-field.error .form-error{display:block}
 
-/* —————————————————— FINAL CTA —————————————————— */
+/* ------------------ FINAL CTA ------------------ */
 .final{padding:140px 32px;text-align:center;background:var(--bg);border-bottom:1px solid var(--line)}
 .final-title{font-family:var(--display);font-weight:500;font-size:clamp(32px,3.6vw,56px);line-height:1.08;letter-spacing:-.02em;margin-bottom:40px;color:var(--fg);max-width:24ch;margin-left:auto;margin-right:auto}
 .final-title em{font-style:normal;font-weight:400;color:var(--mute-2)}
 .cta-btn{display:inline-block;padding:18px 42px;background:var(--fg);color:var(--bg);font-family:var(--display);font-size:12px;font-weight:500;letter-spacing:-.005em;text-transform:uppercase;border-radius:999px;transition:opacity .2s,transform .2s}
 .cta-btn:hover{opacity:.85;transform:translateY(-2px)}
 
-/* —————————————————— FOOTER —————————————————— */
+/* ------------------ FOOTER ------------------ */
 footer{padding:100px 32px 40px;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:56px;background:var(--bg);border-top:1px solid var(--line)}
 footer h4{font-family:var(--display);font-size:12px;font-weight:500;letter-spacing:-.005em;text-transform:uppercase;color:var(--mute-2);margin-bottom:24px}
 footer ul{list-style:none;display:flex;flex-direction:column;gap:14px;font-family:var(--display);font-size:15px;font-weight:500;letter-spacing:-.01em}
@@ -254,14 +254,14 @@ footer ul a:hover{opacity:1}
 .foot-tag{font-size:14px;margin-top:24px;max-width:34ch;line-height:1.6;color:var(--mute-2)}
 .foot-bottom{grid-column:1/-1;display:flex;justify-content:space-between;padding-top:56px;margin-top:40px;border-top:1px solid var(--line);font-family:var(--display);font-size:12px;font-weight:500;color:var(--mute-2);letter-spacing:-.005em;text-transform:uppercase}
 
-/* —————————————————— WALKTHROUGH / BEFORE / AFTER —————————————————— */
+/* ------------------ WALKTHROUGH / BEFORE / AFTER ------------------ */
 .ba{padding:140px 32px;background:var(--bg);border-bottom:1px solid var(--line)}
 .ba-wrap{max-width:1760px;margin:0 auto}
 .ba-label{font-family:var(--display);font-size:12px;font-weight:500;letter-spacing:-.005em;text-transform:uppercase;color:var(--mute-2);margin-bottom:20px;text-align:center}
 .ba-title{font-family:var(--display);font-weight:500;font-size:clamp(32px,3.6vw,56px);line-height:1.06;letter-spacing:-.022em;color:var(--fg);text-align:center;max-width:24ch;margin:0 auto 72px}
 .ba-title em{font-style:normal;font-weight:400;color:var(--mute-2)}
 
-/* Walkthrough gallery — the beautiful parts */
+/* Walkthrough gallery - the beautiful parts */
 .walk{display:grid;grid-template-columns:1fr;gap:80px;margin-bottom:120px}
 .walk-row{display:grid;grid-template-columns:1fr 2fr;gap:64px;align-items:center}
 .walk-row.flip{grid-template-columns:2fr 1fr}
@@ -286,7 +286,7 @@ footer ul a:hover{opacity:1}
 .ba-caption{font-family:var(--body);font-size:14px;line-height:1.65;color:var(--mute-2);max-width:48ch}
 .ba-caption strong{color:var(--fg);font-weight:500}
 
-/* —————————————————— LEGAL / PROSE —————————————————— */
+/* ------------------ LEGAL / PROSE ------------------ */
 .legal{padding:120px 32px 160px;background:var(--bg)}
 .legal-wrap{max-width:780px;margin:0 auto}
 .legal-meta{display:flex;justify-content:space-between;padding-bottom:40px;margin-bottom:64px;border-bottom:1px solid var(--line);font-family:var(--display);font-size:12px;font-weight:500;letter-spacing:-.005em;text-transform:uppercase;color:var(--mute-2)}
@@ -303,7 +303,7 @@ footer ul a:hover{opacity:1}
 .legal a{color:var(--fg);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
 .legal a:hover{opacity:.7}
 
-/* —————————————————— EMAIL MOCKUP (process step 1) —————————————————— */
+/* ------------------ EMAIL MOCKUP (process step 1) ------------------ */
 .email-mock{aspect-ratio:4/5;overflow:hidden;border:1px solid var(--line);background:linear-gradient(145deg,#1a1a1a 0%,#0a0a0a 60%,#000 100%);position:relative;padding:48px 40px;display:flex;flex-direction:column;justify-content:center;gap:24px}
 .email-mock::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 20% 10%,rgba(255,255,255,.04),transparent 40%),radial-gradient(circle at 85% 90%,rgba(255,255,255,.025),transparent 45%);pointer-events:none}
 .em-card{background:#f6f3ec;color:#111;border-radius:10px;padding:22px 24px;font-family:var(--sans);position:relative;z-index:1;box-shadow:0 24px 60px rgba(0,0,0,.45),0 2px 0 rgba(255,255,255,.02)}
@@ -325,7 +325,7 @@ footer ul a:hover{opacity:1}
 .em-reply-head{display:flex;align-items:center;gap:10px;margin-bottom:8px}
 .em-reply-dot{width:8px;height:8px;border-radius:999px;background:#0a0a0a}
 
-/* —————————————————— REVIEW MOCK (process step 3) —————————————————— */
+/* ------------------ REVIEW MOCK (process step 3) ------------------ */
 .review-mock{aspect-ratio:4/5;overflow:hidden;border:1px solid var(--line);background:linear-gradient(145deg,#1a1a1a 0%,#0a0a0a 60%,#000 100%);position:relative;padding:48px 40px;display:flex;flex-direction:column;justify-content:center;gap:20px}
 .review-mock::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 10%,rgba(255,255,255,.04),transparent 40%),radial-gradient(circle at 15% 95%,rgba(255,255,255,.025),transparent 45%);pointer-events:none}
 .rv-card{background:#f6f3ec;color:#111;border-radius:10px;padding:22px 24px;font-family:var(--sans);position:relative;z-index:1;box-shadow:0 24px 60px rgba(0,0,0,.45)}
@@ -346,7 +346,7 @@ footer ul a:hover{opacity:1}
 .rv-note{background:#ececec;margin-left:64px;margin-right:-8px;margin-top:-4px;padding:14px 18px;border-radius:10px;font-size:12px;line-height:1.45;color:#444;position:relative;z-index:1;box-shadow:0 10px 30px rgba(0,0,0,.35)}
 .rv-note .rv-tag{font-family:var(--display);font-size:10px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;color:#888;display:block;margin-bottom:4px}
 
-/* —————————————————— LAUNCH MOCK (process step 4) —————————————————— */
+/* ------------------ LAUNCH MOCK (process step 4) ------------------ */
 .launch-mock{aspect-ratio:4/5;overflow:hidden;border:1px solid var(--line);background:linear-gradient(145deg,#141414 0%,#080808 60%,#000 100%);position:relative;padding:48px 40px;display:flex;flex-direction:column;justify-content:center;gap:18px}
 .launch-mock::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 15%,rgba(255,255,255,.05),transparent 45%),radial-gradient(circle at 90% 90%,rgba(27,155,74,.06),transparent 50%);pointer-events:none}
 .lc-card{background:#f6f3ec;color:#111;border-radius:10px;padding:22px 24px;font-family:var(--sans);position:relative;z-index:1;box-shadow:0 24px 60px rgba(0,0,0,.45)}
@@ -367,7 +367,7 @@ footer ul a:hover{opacity:1}
 .lc-invoice-amt{font-family:var(--display);font-size:15px;font-weight:600;color:#111;letter-spacing:-.01em}
 .lc-invoice-line{font-size:11px;color:#555}
 
-/* —————————————————— INTAKE MOCK (studio: only refreshes) —————————————————— */
+/* ------------------ INTAKE MOCK (studio: only refreshes) ------------------ */
 .intake-mock{aspect-ratio:4/5;overflow:hidden;border:1px solid var(--line);background:linear-gradient(145deg,#1a1a1a 0%,#0a0a0a 60%,#000 100%);position:relative;padding:48px 40px;display:flex;flex-direction:column;justify-content:center;gap:18px}
 .intake-mock::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 20% 15%,rgba(255,255,255,.04),transparent 40%),radial-gradient(circle at 85% 90%,rgba(27,155,74,.05),transparent 50%);pointer-events:none}
 .in-card{background:#f6f3ec;color:#111;border-radius:10px;padding:22px 24px;font-family:var(--sans);position:relative;z-index:1;box-shadow:0 24px 60px rgba(0,0,0,.45)}
@@ -391,7 +391,7 @@ footer ul a:hover{opacity:1}
 .in-reject{background:#ececec;margin-left:40px;margin-top:-4px;padding:14px 18px;border-radius:10px;font-size:12px;line-height:1.45;color:#555;position:relative;z-index:1;box-shadow:0 10px 30px rgba(0,0,0,.35)}
 .in-reject .in-tag{margin-bottom:4px}
 
-/* —————————————————— DELIVERABLES MOCK (studio: how we work) —————————————————— */
+/* ------------------ DELIVERABLES MOCK (studio: how we work) ------------------ */
 .deliv-mock{aspect-ratio:4/5;overflow:hidden;border:1px solid var(--line);background:linear-gradient(145deg,#161616 0%,#090909 60%,#000 100%);position:relative;padding:48px 40px;display:flex;flex-direction:column;justify-content:center;gap:18px}
 .deliv-mock::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 75% 20%,rgba(255,255,255,.05),transparent 45%),radial-gradient(circle at 10% 90%,rgba(255,255,255,.025),transparent 50%);pointer-events:none}
 .dv-card{background:#f6f3ec;color:#111;border-radius:10px;padding:22px 24px;font-family:var(--sans);position:relative;z-index:1;box-shadow:0 24px 60px rgba(0,0,0,.45)}
@@ -417,7 +417,7 @@ footer ul a:hover{opacity:1}
 .dv-testim-q{font-family:var(--display);font-size:13px;line-height:1.4;color:#222;letter-spacing:-.005em}
 .dv-testim-q em{font-style:normal;font-weight:400;color:#777;display:block;font-size:11px;margin-top:4px;letter-spacing:0}
 
-/* —————————————————— RESPONSIVE —————————————————— */
+/* ------------------ RESPONSIVE ------------------ */
 @media (max-width:980px){
   nav{padding:20px;display:flex!important;justify-content:space-between!important}
   .navlinks{display:none!important}
@@ -491,11 +491,11 @@ footer ul a:hover{opacity:1}
   .stat-num{font-size:clamp(32px,10vw,44px)!important}
 }
 
-/* —————————————————— OBX case-study gallery: full-page screenshots, shown whole (no crop) —————————————————— */
+/* ------------------ OBX case-study gallery: full-page screenshots, shown whole (no crop) ------------------ */
 .cs-gallery.obxhs-gallery{grid-template-columns:1fr!important;max-width:900px;gap:40px}
 .cs-gallery.obxhs-gallery img{aspect-ratio:auto!important;height:auto!important;width:100%;object-fit:contain;border-radius:6px}
 .cs-gallery.obxhs-gallery img:first-child{grid-column:span 1!important;aspect-ratio:auto!important}
 
-/* OBX case-study hero: image is wider than 16:9 after cropping the white strip — show it whole, no side-crop */
+/* OBX case-study hero: image is wider than 16:9 after cropping the white strip - show it whole, no side-crop */
 .cs-hero-image.obxhs-hero{aspect-ratio:auto!important}
 .cs-hero-image.obxhs-hero img{height:auto!important;object-fit:contain}
