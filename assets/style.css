@@ -40,7 +40,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:28px 32px;display:gr
 @media (max-width:980px){
   .nav-toggle{display:block!important}
   .cta-nav{display:none!important}
-  .mobile-menu{display:none;position:fixed;inset:0;z-index:99;background:var(--bg);flex-direction:column;justify-content:center;align-items:center;gap:0;padding:80px 32px 40px}
+  .mobile-menu{display:none;position:fixed;inset:0;z-index:99;background:var(--bg);flex-direction:column;justify-content:center;align-items:center;gap:0;padding:80px 32px 120px}
   .mobile-menu.open{display:flex!important}
   .mobile-menu a{font-family:var(--display);font-size:clamp(36px,10vw,56px);font-weight:500;letter-spacing:-.02em;color:var(--fg);opacity:.7;padding:16px 0;transition:opacity .2s;text-align:center;border-bottom:1px solid var(--line);width:100%;display:block}
   .mobile-menu a:last-child{border-bottom:none}
