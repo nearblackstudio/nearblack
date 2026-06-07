@@ -29,7 +29,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css?v=7">
+<link rel="stylesheet" href="assets/style.css?v=8">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"ProfessionalService","@id":"https://nearblack.com/#studio","name":"NearBlack","alternateName":"NearBlack Studio","description":"Design studio specializing in fast, affordable website refreshes for business owners.","url":"https://nearblack.com","logo":"https://nearblack.com/assets/icon-512.png","image":"https://nearblack.com/assets/og-image.png","email":"hello@nearblack.com","priceRange":"$499 - $5,999","areaServed":{"@type":"Country","name":"United States"},"foundingDate":"2026","serviceType":"Website design, website refresh, website redesign","slogan":"Refreshes for the websites that already deserve better."},{"@type":"WebSite","@id":"https://nearblack.com/#website","url":"https://nearblack.com","name":"NearBlack","publisher":{"@id":"https://nearblack.com/#studio"},"inLanguage":"en-US"}]}
 </script>
@@ -57,9 +57,11 @@
   <a href="https://calendly.com/hello-nearblack/15-minute-meeting" target="_blank" rel="noopener" class="mob-cta">Book a call</a>
 </div>
 
-<!-- CINEMATIC HERO -->
+<!-- HERO (cinematic dark video) -->
 <header class="hero-cine">
-  <img class="hero-vid" src="assets/pricing-hero.jpg" alt="" fetchpriority="high">
+  <video class="hero-vid" autoplay muted loop playsinline preload="auto">
+    <source src="assets/hero.mp4" type="video/mp4">
+  </video>
 
   <div class="notif-stack" aria-hidden="true">
     <a href="https://calendly.com/hello-nearblack/15-minute-meeting" target="_blank" rel="noopener" class="notif">
@@ -93,26 +95,34 @@
   <div class="hero-scroll" aria-hidden="true">Scroll<span></span></div>
 </header>
 
-<!-- PROOF MARQUEE -->
-<div class="marquee">
-  <div class="marquee-inner">
-    <span>Omnes <i>·</i> All Seasons <i>·</i> Quench Water Co <i>·</i> OBX Home Solutions <i>·</i> Omnes <i>·</i> All Seasons <i>·</i> Quench Water Co <i>·</i> OBX Home Solutions <i>·</i></span>
-    <span>Omnes <i>·</i> All Seasons <i>·</i> Quench Water Co <i>·</i> OBX Home Solutions <i>·</i> Omnes <i>·</i> All Seasons <i>·</i> Quench Water Co <i>·</i> OBX Home Solutions <i>·</i></span>
-  </div>
-</div>
-
-<!-- BIG STATEMENT -->
-<section class="statement-sec">
-  <div class="wrap">
-    <h2 class="statement reveal">We refresh the websites of business owners who already have one <em>and know it deserves better.</em></h2>
-    <p class="statement-sub reveal d1">From a tired template to a site worth looking at, we rebuild what you have. Custom, fast, and yours to keep. We don't do first-time builds and we don't do six-week timelines. We take what's already there and make it right.</p>
+<!-- SPLIT FEATURE (light) -->
+<section class="sec-light">
+  <div class="wrap split">
+    <div class="split-text reveal">
+      <div class="eyebrow">What we do</div>
+      <h2 style="margin-top:24px">We only touch sites that <em>already exist.</em></h2>
+      <p>We don't do first-time builds or six-week timelines. We take the website you already have and make it sharp, fast, and worth looking at, then hand you back something you actually own.</p>
+      <a href="/portfolio" class="btn btn-dark">See the work →</a>
+    </div>
+    <div class="split-media reveal d1">
+      <img src="assets/omnes-preview.jpg" alt="A NearBlack website refresh" loading="lazy">
+    </div>
   </div>
 </section>
 
-<!-- SERVICES -->
+<!-- PURPOSE (giant typography, instrument-style) -->
+<section class="purpose">
+  <div class="wrap">
+    <div class="eyebrow reveal">Our purpose</div>
+    <p class="purpose-lead reveal d1">Most businesses don't need a brand-new website. They need the one they already have made right. Affordable, fast, and worth looking at. That is the whole idea behind NearBlack.</p>
+    <h2 class="purpose-giant reveal d2"><span>Worth</span><span>looking at.</span></h2>
+  </div>
+</section>
+
+<!-- SERVICES (dark) -->
 <section>
   <div class="wrap">
-    <div class="section-label eyebrow reveal">What we do</div>
+    <div class="section-label eyebrow reveal">The work, in full</div>
     <h2 class="section-title reveal d1">Everything your refresh needs. <em>Nothing it doesn't.</em></h2>
     <div class="svc-list">
       <div class="svc-row reveal"><div class="svc-no">01</div><div class="svc-name">Website Refresh</div><div class="svc-arrow">→</div></div>
@@ -127,103 +137,38 @@
   </div>
 </section>
 
-<!-- FEATURED WORK -->
-<section>
+<!-- WORK CARDS (light, rounded) -->
+<section class="sec-light">
   <div class="wrap">
-    <div class="section-label eyebrow reveal">Selected Refreshes · 2026</div>
-    <h2 class="section-title reveal d1">Selected refreshes. <em>A curated look at the sites we've quietly brought into this decade.</em></h2>
-    <div class="work-grid">
-      <a href="https://omnes.io" target="_blank" rel="noopener" class="project wide reveal">
-        <div class="project-img">
-          <img src="assets/omnes-preview.jpg" alt="omnes.io" loading="lazy">
-        </div>
-        <div class="project-meta">
-          <div>
-            <div class="project-name">Omnes <em>· omnes.io</em></div>
-            <div class="project-desc">The one that started the studio. We paid an agency six figures and waited six months. When it shipped, we disliked it. So we rebuilt it ourselves in a week for under $5k.</div>
-          </div>
-          <div class="project-tag">Refresh · 2025</div>
-        </div>
-      </a>
-      <a href="https://allseasonsnh.com" target="_blank" rel="noopener" class="project wide reveal">
-        <div class="project-img">
-          <img src="assets/allseasons-preview.jpg" alt="allseasonsnh.com" loading="lazy">
-        </div>
-        <div class="project-meta">
-          <div>
-            <div class="project-name">All Seasons <em>· allseasonsnh.com</em></div>
-            <div class="project-desc">Mom's business. We rebuilt her outdated site in a single day. Her reaction is the whole reason this studio exists.</div>
-          </div>
-          <div class="project-tag">Refresh · 2026</div>
-        </div>
-      </a>
-      <a href="/quench" class="project wide reveal">
-        <div class="project-img">
-          <img src="assets/quench-preview.jpg" alt="quenchwaterco.netlify.app" loading="lazy">
-        </div>
-        <div class="project-meta">
-          <div>
-            <div class="project-name">Quench Water Co <em>· quenchwaterco.netlify.app</em></div>
-            <div class="project-desc">A water delivery co with a tired Wix template. We rebuilt the whole thing in a day and gave them back a site that actually looked thirsty.</div>
-          </div>
-          <div class="project-tag">Refresh · 2026</div>
-        </div>
-      </a>
-      <a href="/obxhs" class="project wide reveal">
-        <div class="project-img">
-          <img src="assets/obxhs-preview.jpg?v=2" alt="obxhs.com" loading="lazy">
-        </div>
-        <div class="project-meta">
-          <div>
-            <div class="project-name">OBX Home Solutions <em>· obxhs.com</em></div>
-            <div class="project-desc">A finish carpenter whose whole web presence was a Facebook page. We built him a real site, got him found on Google, and it landed a new paying client within two days.</div>
-          </div>
-          <div class="project-tag">Refresh · 2026</div>
-        </div>
-      </a>
+    <div class="work-head reveal">
+      <div>
+        <div class="eyebrow">Selected work</div>
+        <h2 class="section-title" style="margin-top:18px;margin-bottom:0">Recently refreshed.</h2>
+      </div>
+      <a href="/portfolio" class="more">View all →</a>
     </div>
-    <div style="text-align:center;margin-top:80px">
-      <a href="/portfolio" class="cta-btn" style="background:transparent;color:var(--fg);border:1px solid var(--line)">View All Projects →</a>
+    <div class="work-cards">
+      <a href="https://omnes.io" target="_blank" rel="noopener" class="wcard reveal">
+        <img src="assets/omnes-preview.jpg" alt="omnes.io" loading="lazy">
+        <div class="wcard-label"><div class="wcard-ico">O</div><div><div class="wcard-name">Omnes</div><div class="wcard-desc">The refresh that started the studio</div></div></div>
+      </a>
+      <a href="https://allseasonsnh.com" target="_blank" rel="noopener" class="wcard reveal d1">
+        <img src="assets/allseasons-preview.jpg" alt="allseasonsnh.com" loading="lazy">
+        <div class="wcard-label"><div class="wcard-ico">A</div><div><div class="wcard-name">All Seasons</div><div class="wcard-desc">Outdated site, rebuilt in a day</div></div></div>
+      </a>
+      <a href="/quench" class="wcard reveal">
+        <img src="assets/quench-preview.jpg" alt="Quench Water Co" loading="lazy">
+        <div class="wcard-label"><div class="wcard-ico">Q</div><div><div class="wcard-name">Quench Water Co</div><div class="wcard-desc">Tired Wix template, made thirsty</div></div></div>
+      </a>
+      <a href="/obxhs" class="wcard reveal d1">
+        <img src="assets/obxhs-preview.jpg?v=2" alt="obxhs.com" loading="lazy">
+        <div class="wcard-label"><div class="wcard-ico">OB</div><div><div class="wcard-name">OBX Home Solutions</div><div class="wcard-desc">From a Facebook page to a real site</div></div></div>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- STATS -->
-<section style="padding:100px 32px">
-  <div class="wrap">
-    <div class="stats">
-      <div class="stat reveal"><div class="stat-num">72<em>hr</em></div><div class="stat-label">Standard Delivery</div></div>
-      <div class="stat reveal d1"><div class="stat-num">$499</div><div class="stat-label">Starting Price</div></div>
-      <div class="stat reveal d2"><div class="stat-num">10%</div><div class="stat-label">Up-front Deposit</div></div>
-      <div class="stat reveal d3"><div class="stat-num">100<em>%</em></div><div class="stat-label">Custom. No Templates.</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- PROCESS -->
-<section>
-  <div class="wrap">
-    <div class="section-label eyebrow reveal">The Process</div>
-    <h2 class="section-title reveal d1">Four days. <em>Sometimes three. Never six weeks.</em></h2>
-    <div class="steps">
-      <div class="step reveal"><div class="step-num">· 01</div><h3>A <em>short</em> call.</h3><p>Fifteen minutes. We learn your business, your customers, and what's working. That's it.</p></div>
-      <div class="step reveal d1"><div class="step-num">· 02</div><h3>We <em>design</em>.</h3><p>No decks. No mood boards. A real, custom site you can click through within 48 hours.</p></div>
-      <div class="step reveal d2"><div class="step-num">· 03</div><h3>You <em>review</em>.</h3><p>Tell us what to change. We change it the same day. Most projects need one round.</p></div>
-      <div class="step reveal d3"><div class="step-num">· 04</div><h3>We <em>launch</em>.</h3><p>You pay only when you love it. We transfer ownership. You get back to work.</p></div>
-    </div>
-    <div style="text-align:center;margin-top:80px">
-      <a href="/process" class="cta-btn" style="background:transparent;color:var(--fg);border:1px solid var(--line)">See the Full Process →</a>
-    </div>
-  </div>
-</section>
-
-<!-- QUOTE -->
-<section class="quote">
-  <blockquote>"I paid six figures and waited six months. We built a better one ourselves in a <em>week.</em> That's the whole reason NearBlack exists."</blockquote>
-  <cite>· The Founder</cite>
-</section>
-
-<!-- PRICING -->
+<!-- PRICING (dark) -->
 <section>
   <div class="wrap">
     <div class="section-label eyebrow reveal">Engagements</div>
@@ -288,48 +233,38 @@
   </div>
 </section>
 
-<!-- FINAL CTA -->
+<!-- FINAL CLOSING (dark) -->
 <section class="final">
   <h2 class="final-title">Let's refresh your site. <em>Fast, affordable, and worth looking at.</em></h2>
   <a href="https://calendly.com/hello-nearblack/15-minute-meeting" target="_blank" rel="noopener" class="cta-btn">Book a call →</a>
 </section>
 
-<!-- FOOTER -->
+<!-- FOOTER (light, instrument-style) -->
 <footer>
-  <div>
-    <div class="foot-brand">Near<em>Black</em></div>
-    <p class="foot-tag">Refreshes for the websites that already deserve better.</p>
+  <div class="ftr-main">
+    <div class="ftr-news">
+      <h3>Refresh notes. The occasional email on making your site worth looking at.</h3>
+      <form class="nl-form" onsubmit="window.location.href='mailto:hello@nearblack.com?subject=Refresh%20notes&body='+encodeURIComponent('Please add me to refresh notes: '+this.email.value);return false;">
+        <input type="email" name="email" placeholder="Enter your email…" required>
+        <button type="submit">Subscribe →</button>
+      </form>
+    </div>
+    <div class="ftr-col">
+      <h4>Studio</h4>
+      <ul><li><a href="/studio">About</a></li><li><a href="/process">Process</a></li><li><a href="/portfolio">Portfolio</a></li><li><a href="/blog">Blog</a></li></ul>
+    </div>
+    <div class="ftr-col">
+      <h4>Engagements</h4>
+      <ul><li><a href="/pricing#launch">Launch · $499</a></li><li><a href="/pricing#business">Business · $999</a></li><li><a href="/pricing#growth">Growth · $1,999</a></li><li><a href="/pricing#authority">Authority · $5,999</a></li></ul>
+    </div>
+    <div class="ftr-col">
+      <h4>Get in touch</h4>
+      <ul><li><a href="https://calendly.com/hello-nearblack/15-minute-meeting" target="_blank" rel="noopener">Book a call</a></li><li><a href="mailto:hello@nearblack.com">hello@nearblack.com</a></li><li><a href="/terms">Terms of Use</a></li><li><a href="/privacy">Privacy Policy</a></li></ul>
+    </div>
   </div>
-  <div>
-    <h4>Studio</h4>
-    <ul>
-      <li><a href="/studio">About</a></li>
-      <li><a href="/process">Process</a></li>
-      <li><a href="/portfolio">Portfolio</a></li>
-      <li><a href="/blog">Blog</a></li>
-    </ul>
-  </div>
-  <div>
-    <h4>Engagements</h4>
-    <ul>
-      <li><a href="/pricing#launch">Launch · $499</a></li>
-      <li><a href="/pricing#business">Business · $999</a></li>
-      <li><a href="/pricing#growth">Growth · $1,999</a></li>
-      <li><a href="/pricing#authority">Authority · $5,999</a></li>
-    </ul>
-  </div>
-  <div>
-    <h4>Contact</h4>
-    <ul>
-      <li><a href="https://calendly.com/hello-nearblack/15-minute-meeting" target="_blank" rel="noopener">Book a call</a></li>
-      <li><a href="mailto:hello@nearblack.com">hello@nearblack.com</a></li>
-      <li><a href="/terms">Terms of Use</a></li>
-      <li><a href="/privacy">Privacy Policy</a></li>
-    </ul>
-  </div>
-  <div class="foot-bottom">
-    <div>© 2026 NearBlack LLC.</div>
-    <div>A shade shy of black.</div>
+  <div class="ftr-bottom">
+    <div class="ftr-brand">Near<em>Black</em></div>
+    <div>© 2026 NearBlack LLC · St. Petersburg, FL · A shade shy of black.</div>
   </div>
 </footer>
 
@@ -350,7 +285,6 @@ const reduce=window.matchMedia("(prefers-reduced-motion:reduce)").matches;
 if(!reduce&&"IntersectionObserver"in window){
   const io=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}});},{threshold:0,rootMargin:"0px 0px -10% 0px"});
   document.querySelectorAll(".reveal").forEach(el=>{
-    // already in or above the viewport (anchor jump, restored scroll, fast scroll) -> show now
     if(el.getBoundingClientRect().top < window.innerHeight*0.92){el.classList.add("in");}
     else{io.observe(el);}
   });

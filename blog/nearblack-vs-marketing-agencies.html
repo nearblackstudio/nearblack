@@ -29,7 +29,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/style.css?v=7">
+<link rel="stylesheet" href="../assets/style.css?v=8">
 <script type="application/ld+json">
 [{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Blog","item":"https://nearblack.com/blog"},{"@type":"ListItem","position":2,"name":"NearBlack vs Marketing Agencies"}]},{"@context":"https://schema.org","@type":"Article","headline":"NearBlack vs Marketing Agencies: Same Result, Different Price Tag","author":{"@type":"Organization","name":"NearBlack LLC","url":"https://nearblack.com"},"publisher":{"@type":"Organization","name":"NearBlack LLC","url":"https://nearblack.com"},"datePublished":"2026-06-06","dateModified":"2026-06-06","mainEntityOfPage":"https://nearblack.com/blog/nearblack-vs-marketing-agencies"},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why do marketing agencies charge so much for websites?","acceptedAnswer":{"@type":"Answer","text":"Agencies have significant overhead: account managers, project managers, senior strategists, multiple rounds of discovery and approval, and billing structures that charge for every hour from every team member. A studio that focuses on one specific deliverable has none of that overhead."}},{"@type":"Question","name":"Is a cheap website refresh actually as good as an agency build?","acceptedAnswer":{"@type":"Answer","text":"For a website refresh, yes. NearBlack focuses exclusively on refreshing existing sites, which means we have refined a very specific process. The design quality, performance, and SEO setup are professional-grade. What you are not paying for is the strategy, branding, and ongoing retainer that agencies bundle in."}},{"@type":"Question","name":"When should I use a full-service agency instead of NearBlack?","acceptedAnswer":{"@type":"Answer","text":"Use an agency when you need brand strategy from scratch, comprehensive copywriting, photography and video production, or an ongoing marketing retainer. NearBlack does one thing extremely well: taking an existing site and making it significantly better. If you need more than that, an agency may be appropriate."}}]}]
 </script>
@@ -174,11 +174,31 @@
 </section>
 
 <footer>
-  <div><div class="foot-brand">Near<em>Black</em></div><p class="foot-tag">Refreshes for the websites that already deserve better.</p></div>
-  <div><h4>Studio</h4><ul><li><a href="/studio">About</a></li><li><a href="/process">Process</a></li><li><a href="/portfolio">Portfolio</a></li><li><a href="/blog">Blog</a></li></ul></div>
-  <div><h4>Engagements</h4><ul><li><a href="/pricing#launch">Launch · $499</a></li><li><a href="/pricing#business">Business · $999</a></li><li><a href="/pricing#growth">Growth · $1,999</a></li><li><a href="/pricing#authority">Authority · $5,999</a></li></ul></div>
-  <div><h4>Contact</h4><ul><li><a href="mailto:hello@nearblack.com">hello@nearblack.com</a></li><li><a href="/terms">Terms of Use</a></li><li><a href="/privacy">Privacy Policy</a></li></ul></div>
-  <div class="foot-bottom"><div>© 2026 NearBlack LLC.</div><div>A shade shy of black.</div></div>
+  <div class="ftr-main">
+    <div class="ftr-news">
+      <h3>Refresh notes. The occasional email on making your site worth looking at.</h3>
+      <form class="nl-form" onsubmit="window.location.href='mailto:hello@nearblack.com?subject=Refresh%20notes&body='+encodeURIComponent('Please add me to refresh notes: '+this.email.value);return false;">
+        <input type="email" name="email" placeholder="Enter your email…" required>
+        <button type="submit">Subscribe →</button>
+      </form>
+    </div>
+    <div class="ftr-col">
+      <h4>Studio</h4>
+      <ul><li><a href="/studio">About</a></li><li><a href="/process">Process</a></li><li><a href="/portfolio">Portfolio</a></li><li><a href="/blog">Blog</a></li></ul>
+    </div>
+    <div class="ftr-col">
+      <h4>Engagements</h4>
+      <ul><li><a href="/pricing#launch">Launch · $499</a></li><li><a href="/pricing#business">Business · $999</a></li><li><a href="/pricing#growth">Growth · $1,999</a></li><li><a href="/pricing#authority">Authority · $5,999</a></li></ul>
+    </div>
+    <div class="ftr-col">
+      <h4>Get in touch</h4>
+      <ul><li><a href="https://calendly.com/hello-nearblack/15-minute-meeting" target="_blank" rel="noopener">Book a call</a></li><li><a href="mailto:hello@nearblack.com">hello@nearblack.com</a></li><li><a href="/terms">Terms of Use</a></li><li><a href="/privacy">Privacy Policy</a></li></ul>
+    </div>
+  </div>
+  <div class="ftr-bottom">
+    <div class="ftr-brand">Near<em>Black</em></div>
+    <div>© 2026 NearBlack LLC · St. Petersburg, FL · A shade shy of black.</div>
+  </div>
 </footer>
 
 <script>const navToggle=document.querySelector(".nav-toggle");const mobileMenu=document.getElementById("mobileMenu");navToggle.addEventListener("click",()=>{navToggle.classList.toggle("open");mobileMenu.classList.toggle("open");navToggle.setAttribute("aria-expanded",mobileMenu.classList.contains("open"));document.body.style.overflow=mobileMenu.classList.contains("open")?"hidden":"";});document.querySelectorAll(".mobile-menu a").forEach(a=>a.addEventListener("click",()=>{navToggle.classList.remove("open");mobileMenu.classList.remove("open");document.body.style.overflow="";}));</script>
