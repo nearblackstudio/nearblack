@@ -1052,8 +1052,10 @@ section,.sec-light,.statement-c,.hero-cine,.hero-sm,.final,.purpose,.marquee{bor
 .wcard-media .laptop{width:108%}
 /* bigger, more prominent phones with a chunkier bezel (per reference) */
 /* phone sizes to the SCREEN; screen ratio == screenshot ratio so the full mobile width shows (no side crop) */
-.wcard .phone{height:100%;width:auto;aspect-ratio:auto;padding:8px;border-radius:40px}
-.wcard .phone-screen{width:auto;height:100%;aspect-ratio:430/940;border-radius:32px}
+.wcard .phone{height:96%;width:auto;aspect-ratio:auto;padding:9px;border-radius:42px;box-shadow:0 26px 50px rgba(0,0,0,.42),inset 0 1.5px 1px rgba(255,255,255,.18),inset 0 -2px 3px rgba(0,0,0,.55)}
+.wcard .phone-screen{width:auto;height:100%;aspect-ratio:430/940;border-radius:33px;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.08)}
+/* Dynamic Island so it reads as a real iPhone (not a flat rectangle) */
+.wcard .phone::after{content:"";position:absolute;top:3%;left:50%;transform:translateX(-50%);width:26%;height:9px;background:#08080a;border-radius:999px;z-index:4;box-shadow:0 1px 2px rgba(0,0,0,.5)}
 @media(max-width:1100px){.sec-light .work-cards{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.sec-light .work-cards{grid-template-columns:1fr}}
 
