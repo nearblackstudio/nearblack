@@ -828,7 +828,7 @@ footer{background:var(--paper);color:var(--ink);border-top:1px solid rgba(0,0,0,
 .hero-scroll{display:none !important}
 
 /* PRICING CARDS v2 (haptic-style: big rounded cards, light + one dark) */
-.price-row{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:48px}
+.price-row{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:48px;align-items:start}
 .pcard{background:#f2f2f2;border-radius:22px;padding:28px 26px 26px;display:flex;flex-direction:column;color:var(--ink)}
 .pcard.dark{background:var(--ink);color:#fff}
 .pcard-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:36px}
@@ -846,7 +846,7 @@ footer{background:var(--paper);color:var(--ink);border-top:1px solid rgba(0,0,0,
 .pcard-btn{align-self:flex-start;font-family:var(--display);font-weight:500;font-size:14px;padding:12px 22px;border-radius:12px;background:var(--ink);color:#fff;transition:transform .25s cubic-bezier(.16,1,.3,1),opacity .25s;margin-bottom:28px}
 .pcard-btn:hover{transform:translateY(-2px);opacity:.9}
 .pcard.dark .pcard-btn{background:#fff;color:var(--ink)}
-.pcard-feats{list-style:none;border-top:1px solid rgba(0,0,0,.1);padding-top:22px;display:flex;flex-direction:column;gap:11px;margin-top:auto}
+.pcard-feats{list-style:none;border-top:1px solid rgba(0,0,0,.1);padding-top:22px;display:flex;flex-direction:column;gap:11px;margin-top:24px}
 .pcard.dark .pcard-feats{border-top-color:rgba(255,255,255,.15)}
 .pcard-feats li{font-size:13px;color:#555;line-height:1.4;padding-left:18px;position:relative}
 .pcard.dark .pcard-feats li{color:#bdbdbd}
@@ -922,3 +922,22 @@ nav.nav-hidden{transform:translateY(-100%)}
 .pf-title{font-family:var(--display);font-weight:500;font-size:clamp(20px,1.9vw,28px);line-height:1.18;letter-spacing:-.018em;color:var(--fg);margin-top:8px;max-width:34ch}
 .pf-tags{margin-top:16px;display:flex;gap:20px;font-family:var(--display);font-size:11px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--mute)}
 @media(max-width:760px){.pf-grid{grid-template-columns:1fr;gap:48px}}
+
+/* ============================================================
+   NO straight-line boxes: remove section dividers + rounded cards
+   ============================================================ */
+/* drop the divider lines between sections */
+section,.sec-light,.statement-c,.hero-cine,.hero-sm,.final,.purpose,.marquee{border-top:none;border-bottom:none}
+
+/* Ongoing-care add-ons: rounded cards, no grid lines */
+.addon-grid{background:none;border:none;gap:18px}
+.addon{background:#141414;border-radius:18px;min-height:0;padding:30px 28px;gap:12px}
+.addon:hover{background:#1c1c1c}
+.sec-light .addon{background:#f2f2f2}
+.sec-light .addon:hover{background:#ececec}
+.addon-price{margin-top:14px}
+
+/* Blog cards: rounded cards, no grid lines */
+.blog-grid{border-left:none;gap:18px}
+.blog-card{border:none!important;border-radius:18px;background:#141414;padding:32px 30px}
+.blog-card:hover{background:#1c1c1c}
