@@ -1020,9 +1020,26 @@ section,.sec-light,.statement-c,.hero-cine,.hero-sm,.final,.purpose,.marquee{bor
 /* Phone cards are PORTRAIT so the slim phone fills them (laptops stay landscape) */
 .work-cards{align-items:start}
 .wcard.card-phone{aspect-ratio:3/4}
-/* keep the work grid a sane size on big screens; center it */
-.sec-light .work-cards{grid-template-columns:repeat(2,minmax(0,560px));justify-content:center}
-.sec-light .work-head{max-width:1140px;margin-left:auto;margin-right:auto}
+/* ============================================================
+   RECENT WORK v2 — full-width row of 4, captions below cards
+   ============================================================ */
+.sec-light .work-head{max-width:none;margin:0}
+.sec-light .work-cards{grid-template-columns:repeat(4,1fr);justify-content:normal;gap:22px}
+.wcard{display:block;background:none;border:none;border-radius:0;overflow:visible;aspect-ratio:auto}
+.sec-light .wcard{border:none;box-shadow:none}
+.sec-light .wcard:hover{box-shadow:none}
+.wcard-media{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 14px 30px rgba(20,22,28,.09)}
+.wcard-cap{display:flex;flex-direction:column;gap:2px;padding:16px 2px 0}
+.wcard-cap .wcard-name{font-family:var(--display);font-weight:600;font-size:17px;letter-spacing:-.012em;color:var(--ink)}
+.wcard-cap .wcard-desc{font-size:13.5px;color:#6f6f6f;letter-spacing:-.005em}
+.wcard-media.bg-omnes{background:radial-gradient(125% 120% at 50% -12%,#FFEFA6 0%,#FFD60A 48%,#E7BE00 100%)}
+.wcard-media.bg-allseasons{background:radial-gradient(125% 120% at 50% -12%,#E6FFAD 0%,#B8FF00 48%,#97D600 100%)}
+.wcard-media.bg-quench{background:radial-gradient(125% 120% at 50% -12%,#FFC196 0%,#FF6B00 48%,#E15F00 100%)}
+.wcard-media.bg-obxhs{background:radial-gradient(125% 120% at 50% -12%,#FF9AC8 0%,#FF0080 48%,#D4006C 100%)}
+.wcard-media .device{padding:9% 9% 10%}
+.wcard .phone{height:86%}
+@media(max-width:1100px){.sec-light .work-cards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.sec-light .work-cards{grid-template-columns:1fr}}
 
 /* phone (mobile version) — two of the cards */
 .device-phone{padding:0!important;display:flex;align-items:center;justify-content:center}
