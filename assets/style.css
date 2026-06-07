@@ -1023,7 +1023,7 @@ section,.sec-light,.statement-c,.hero-cine,.hero-sm,.final,.purpose,.marquee{bor
 /* ============================================================
    RECENT WORK v2 — full-width row of 4, captions below cards
    ============================================================ */
-.sec-light .work-head{max-width:none;margin:0}
+.sec-light .work-head{max-width:none;margin:0 0 60px}
 .sec-light .work-cards{grid-template-columns:repeat(4,1fr);justify-content:normal;gap:22px}
 .wcard{display:block;background:none;border:none;border-radius:0;overflow:visible;aspect-ratio:auto}
 .sec-light .wcard{border:none;box-shadow:none}
@@ -1037,7 +1037,9 @@ section,.sec-light,.statement-c,.hero-cine,.hero-sm,.final,.purpose,.marquee{bor
 .wcard-media.bg-quench{background:radial-gradient(125% 120% at 50% -12%,#FFC196 0%,#FF6B00 48%,#E15F00 100%)}
 .wcard-media.bg-obxhs{background:radial-gradient(125% 120% at 50% -12%,#FF9AC8 0%,#FF0080 48%,#D4006C 100%)}
 .wcard-media .device{padding:9% 9% 10%}
-.wcard .phone{height:86%}
+/* bigger, more prominent phones with a chunkier bezel (per reference) */
+.wcard .phone{height:100%;padding:8px;border-radius:40px}
+.wcard .phone-screen{border-radius:32px}
 @media(max-width:1100px){.sec-light .work-cards{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.sec-light .work-cards{grid-template-columns:1fr}}
 
