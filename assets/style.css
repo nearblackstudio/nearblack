@@ -1066,6 +1066,9 @@ section,.sec-light,.statement-c,.hero-cine,.hero-sm,.final,.purpose,.marquee{bor
 .wcard .phone-screen{position:relative;width:100%;height:100%;border-radius:34px;overflow:hidden;background:#fff}
 .wcard .phone-screen img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
 .wcard:hover .phone-screen img{transform:none}
+/* Quench card uses the client's own full iPhone screenshot (1206x2622). Match the screen to its exact ratio so the WHOLE shot shows untrimmed; hide our CSS island since the screenshot already has the iOS status bar + Dynamic Island. */
+.wcard-media.bg-quench .phone-screen{width:auto;height:100%;aspect-ratio:1206/2622}
+.wcard-media.bg-quench .phone::after{display:none}
 
 /* PRICING flip: 3 standard tiers dark, top tier white */
 .sec-dark .pcard.light{background:#fff;color:var(--ink);box-shadow:0 26px 64px rgba(0,0,0,.55)}
