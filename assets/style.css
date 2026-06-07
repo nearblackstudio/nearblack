@@ -1017,6 +1017,17 @@ section,.sec-light,.statement-c,.hero-cine,.hero-sm,.final,.purpose,.marquee{bor
 /* OBXHS desktop hero is wide/short — fill the laptop screen (cover) instead of letterboxing */
 .bg-obxhs .laptop-screen img{object-fit:cover}
 
+/* ============================================================
+   PORTFOLIO — home-style device cards on the dark page + full descriptions
+   ============================================================ */
+.pf-cards{grid-template-columns:repeat(4,1fr);gap:24px}
+.pf-cards .wcard-cap{gap:7px;padding-top:20px}
+.pf-cards .wcard-cap .wcard-name{font-family:var(--display);font-size:13px;font-weight:500;letter-spacing:-.005em;color:var(--mute-2)}
+.pf-cards .wcard-cap .wcard-title{font-family:var(--display);font-weight:500;font-size:clamp(16px,1.15vw,19px);line-height:1.28;letter-spacing:-.015em;color:var(--fg)}
+.pf-cards .wcard-cap .wcard-tags{display:flex;gap:14px;margin-top:5px;font-family:var(--display);font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+@media(max-width:1100px){.pf-cards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.pf-cards{grid-template-columns:1fr}}
+
 /* Phone cards are PORTRAIT so the slim phone fills them (laptops stay landscape) */
 .work-cards{align-items:start}
 .wcard.card-phone{aspect-ratio:3/4}
