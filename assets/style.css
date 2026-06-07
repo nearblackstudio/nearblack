@@ -1015,7 +1015,7 @@ section,.sec-light,.statement-c,.hero-cine,.hero-sm,.final,.purpose,.marquee{bor
 .laptop-base{width:100%;height:13px;background:linear-gradient(180deg,#44474c 0%,#27292c 55%,#0f1011 100%);border-radius:0 0 12px 12px}
 .laptop-base::before{content:"";display:block;width:17%;height:6px;margin:0 auto;background:#0d0d0e;border-radius:0 0 7px 7px}
 /* OBXHS desktop hero is wide/short — fill the laptop screen (cover) instead of letterboxing */
-.wcard.bg-obxhs .laptop-screen img{object-fit:cover}
+.bg-obxhs .laptop-screen img{object-fit:cover}
 
 /* Phone cards are PORTRAIT so the slim phone fills them (laptops stay landscape) */
 .work-cards{align-items:start}
@@ -1036,10 +1036,13 @@ section,.sec-light,.statement-c,.hero-cine,.hero-sm,.final,.purpose,.marquee{bor
 .wcard-media.bg-allseasons{background:radial-gradient(125% 120% at 50% -12%,#E6FFAD 0%,#B8FF00 48%,#97D600 100%)}
 .wcard-media.bg-quench{background:radial-gradient(125% 120% at 50% -12%,#FFC196 0%,#FF6B00 48%,#E15F00 100%)}
 .wcard-media.bg-obxhs{background:radial-gradient(125% 120% at 50% -12%,#FF9AC8 0%,#FF0080 48%,#D4006C 100%)}
-.wcard-media .device{padding:9% 9% 10%}
+.wcard-media .device{padding:6% 2% 7%;align-items:center}
+/* laptops fill the card width so they have similar presence to the phones */
+.wcard-media .laptop{width:108%}
 /* bigger, more prominent phones with a chunkier bezel (per reference) */
-.wcard .phone{height:100%;padding:8px;border-radius:40px}
-.wcard .phone-screen{border-radius:32px}
+/* phone sizes to the SCREEN; screen ratio == screenshot ratio so the full mobile width shows (no side crop) */
+.wcard .phone{height:100%;width:auto;aspect-ratio:auto;padding:8px;border-radius:40px}
+.wcard .phone-screen{width:auto;height:100%;aspect-ratio:430/940;border-radius:32px}
 @media(max-width:1100px){.sec-light .work-cards{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.sec-light .work-cards{grid-template-columns:1fr}}
 
