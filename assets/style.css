@@ -1094,20 +1094,16 @@ section,.sec-light,.statement-c,.hero-cine,.hero-sm,.final,.purpose,.marquee{bor
 .statement-reveal .sw-em.on{color:var(--mute-2)}
 
 /* ============================================================
-   PROCESS — step cards (new style; mirrors the Selected Work grid)
+   PROCESS — step cards (refined monochrome, editorial)
    ============================================================ */
-.proc-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;align-items:start}
-.proc-card{display:flex;flex-direction:column}
-.proc-media{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;box-shadow:0 14px 30px rgba(20,22,28,.09)}
-.proc-media .proc-num{font-family:var(--serif);font-style:italic;font-weight:400;font-size:clamp(96px,9vw,148px);line-height:1;letter-spacing:-.03em;color:rgba(11,11,11,.86)}
-.proc-media.bg-omnes{background:radial-gradient(125% 120% at 50% -12%,#FFEFA6 0%,#FFD60A 48%,#E7BE00 100%)}
-.proc-media.bg-quench{background:radial-gradient(125% 120% at 50% -12%,#FFC196 0%,#FF6B00 48%,#E15F00 100%)}
-.proc-media.bg-obxhs{background:radial-gradient(125% 120% at 50% -12%,#FF9AC8 0%,#FF0080 48%,#D4006C 100%)}
-.proc-media.bg-allseasons{background:radial-gradient(125% 120% at 50% -12%,#E6FFAD 0%,#B8FF00 48%,#97D600 100%)}
-.proc-cap{display:flex;flex-direction:column;gap:6px;padding:18px 2px 0}
-.proc-cap .proc-day{font-family:var(--display);font-weight:600;font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:#9a9a9a}
-.proc-cap .proc-title{font-family:var(--display);font-weight:600;font-size:19px;letter-spacing:-.015em;color:var(--ink)}
-.proc-cap .proc-title em{font-family:var(--serif);font-style:italic;font-weight:400;color:#a3a09a}
-.proc-cap .proc-desc{font-size:13.5px;line-height:1.55;color:#6f6f6f;margin-top:2px}
-@media(max-width:1100px){.proc-cards{grid-template-columns:repeat(2,1fr);gap:30px}}
-@media(max-width:600px){.proc-cards{grid-template-columns:1fr;gap:32px}}
+.proc-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;align-items:stretch}
+.proc-card{position:relative;display:flex;flex-direction:column;background:#fff;border:1px solid rgba(0,0,0,.09);border-radius:20px;padding:34px 30px 30px;box-shadow:0 1px 2px rgba(0,0,0,.04),0 16px 36px rgba(20,22,28,.05);transition:transform .55s cubic-bezier(.16,1,.3,1),box-shadow .55s,border-color .4s}
+.proc-card:hover{transform:translateY(-5px);border-color:rgba(0,0,0,.14);box-shadow:0 2px 6px rgba(0,0,0,.06),0 28px 56px rgba(20,22,28,.11)}
+.proc-num{display:block;font-family:var(--serif);font-style:italic;font-weight:400;font-size:clamp(56px,3.8vw,76px);line-height:1;letter-spacing:-.02em;color:var(--ink)}
+.proc-card .proc-body{margin-top:auto;padding-top:30px}
+.proc-day{display:block;font-family:var(--display);font-weight:600;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#9a9a9a;margin:0 0 12px}
+.proc-title{display:block;font-family:var(--display);font-weight:600;font-size:20px;line-height:1.15;letter-spacing:-.015em;color:var(--ink);margin:0 0 12px}
+.proc-title em{font-family:var(--serif);font-style:italic;font-weight:400;color:#a3a09a}
+.proc-desc{font-size:13.5px;line-height:1.6;color:#6f6f6f;margin:0}
+@media(max-width:1100px){.proc-cards{grid-template-columns:repeat(2,1fr);gap:18px}}
+@media(max-width:600px){.proc-cards{grid-template-columns:1fr}}
