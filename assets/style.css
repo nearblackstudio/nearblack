@@ -861,3 +861,33 @@ footer{background:var(--paper);color:var(--ink);border-top:1px solid rgba(0,0,0,
 .split-media{background:#fff}
 .split-media img{object-fit:contain}
 .project-img img,.project-tile img{object-fit:contain!important;object-position:center!important}
+
+/* ============================================================
+   FIXES: legibility on white sections, forms on white, work-card label
+   ============================================================ */
+/* all text/headings go dark on white (sec-light) sections */
+.sec-light,.sec-light p,.sec-light li,.sec-light h1,.sec-light h2,.sec-light h3,.sec-light h4,
+.sec-light blockquote,.sec-light cite,.sec-light dt,.sec-light dd,.sec-light strong,.sec-light b,
+.sec-light .display,.sec-light .section-title,.sec-light .final-title,.sec-light .stat-num,
+.sec-light .step h3,.sec-light .project-name,.sec-light .tier-name,.sec-light .tier-price,
+.sec-light .manifesto-grid p,.sec-light .lede,.sec-light .addon-name,.sec-light .split-text h2,
+.sec-light .split-text p{color:var(--ink)}
+/* muted labels on white */
+.sec-light .eyebrow,.sec-light .section-label,.sec-light .tier-num,.sec-light .step-num,
+.sec-light .project-tag,.sec-light .tier-delivery,.sec-light .stat-label,.sec-light .addon-desc,
+.sec-light .addon-price,.sec-light figcaption,.sec-light .lede{color:#6b6b6b}
+/* serif-italic accent words: readable mid-gray on white */
+.sec-light .display em,.sec-light .section-title em,.sec-light .final-title em,
+.sec-light .manifesto-grid p em,.sec-light .lede em,.sec-light h2 em{color:#9a9a9a}
+/* dividers on white */
+.sec-light .tier,.sec-light .addon,.sec-light hr,.sec-light .line{border-color:rgba(0,0,0,.12)}
+/* buttons that were white-on-dark become dark-on-white */
+.sec-light .cta-btn,.sec-light .form-submit{background:var(--ink);color:#fff;border-color:var(--ink)}
+.sec-light .cta-btn:hover,.sec-light .form-submit:hover{opacity:.9}
+/* contact form fields readable on white */
+.sec-light .form-field input,.sec-light .form-field textarea,.sec-light .form-field select{color:var(--ink);background:#fff;border-color:rgba(0,0,0,.2)}
+.sec-light .form-field input::placeholder,.sec-light .form-field textarea::placeholder{color:#aaa}
+.sec-light .form-field label{color:#6b6b6b}
+.sec-light .form-field.error input,.sec-light .form-field.error textarea{border-color:#c0392b}
+/* work-card label: compact corner chip (not a full-width bar) */
+.wcard-label{right:auto;max-width:calc(100% - 32px);background:rgba(10,10,10,.74)}
