@@ -941,3 +941,99 @@ section,.sec-light,.statement-c,.hero-cine,.hero-sm,.final,.purpose,.marquee{bor
 .blog-grid{border-left:none;gap:18px}
 .blog-card{border:none!important;border-radius:18px;background:#141414;padding:32px 30px}
 .blog-card:hover{background:#1c1c1c}
+
+/* ============================================================
+   HOME v3 — swap themes: Selected work = white, Pricing = black
+   ============================================================ */
+/* Selected-work cards now sit on a white section: give them definition */
+.sec-light .wcard{border:1px solid rgba(0,0,0,.09);box-shadow:0 1px 2px rgba(0,0,0,.04),0 14px 34px rgba(0,0,0,.06)}
+.sec-light .wcard:hover{box-shadow:0 2px 5px rgba(0,0,0,.06),0 22px 50px rgba(0,0,0,.10)}
+
+/* Pricing now sits on a black section */
+.sec-dark{background:var(--bg);color:var(--fg)}
+.sec-dark .work-head .more{color:#a6a6a6}
+.sec-dark .work-head .more:hover{color:#fff}
+/* light cards pop on black; blacked-out premium tier gets a visible border */
+.sec-dark .pcard.dark{background:#161616;border:1px solid rgba(255,255,255,.18)}
+/* bottom "See full pricing" button → light outline on black */
+.sec-dark .btn-outline-dark{border-color:rgba(255,255,255,.26);color:#fff}
+.sec-dark .btn-outline-dark:hover{background:#fff;color:var(--ink)}
+
+/* centered intro statement: smaller, more refined */
+.statement-big{font-size:clamp(26px,3.6vw,48px);max-width:24ch}
+
+/* ============================================================
+   SELECTED WORK — code-built browser mockups (device-in-context)
+   ============================================================ */
+.wcard{background:#eef0f3}
+.wcard.bg-omnes{background:linear-gradient(145deg,#e3e9f2 0%,#bccadb 100%)}
+.wcard.bg-allseasons{background:linear-gradient(145deg,#efe6d6 0%,#d4bd9c 100%)}
+.wcard.bg-quench{background:linear-gradient(145deg,#dcedf0 0%,#a4ced6 100%)}
+.wcard.bg-obxhs{background:linear-gradient(145deg,#f4e4d0 0%,#edbb86 100%)}
+
+/* a browser window floating on the gradient, peeking off the bottom edge */
+.mock{position:absolute;left:8%;right:8%;top:13%;bottom:-7%;display:flex;flex-direction:column;background:#fff;border-radius:12px 12px 0 0;overflow:hidden;box-shadow:0 30px 55px rgba(20,22,28,.26),0 8px 18px rgba(20,22,28,.12);transition:transform .7s cubic-bezier(.16,1,.3,1),box-shadow .5s}
+.mock-bar{flex-shrink:0;height:34px;display:flex;align-items:center;gap:9px;padding:0 13px;background:#f4f4f5;border-bottom:1px solid rgba(0,0,0,.06)}
+.mock-dots{display:flex;gap:6px;flex-shrink:0}
+.mock-dots i{width:9px;height:9px;border-radius:50%;background:#d6d6d8}
+.mock-url{flex:1;min-width:0;height:19px;display:flex;align-items:center;padding:0 11px;border-radius:6px;background:#fff;border:1px solid rgba(0,0,0,.06);font-family:var(--display);font-weight:500;font-size:10.5px;letter-spacing:-.01em;color:#9b9b9f;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:64%}
+.mock-shot{flex:1;min-height:0;overflow:hidden;background:#fff}
+.wcard .mock-shot img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
+.wcard:hover .mock{transform:translateY(-7px);box-shadow:0 40px 72px rgba(20,22,28,.30),0 10px 22px rgba(20,22,28,.14)}
+.wcard:hover .mock-shot img{transform:none}
+
+/* label rides above the browser window */
+.wcard-label{z-index:3}
+
+/* card tile on the white section: soft border + light lift (browser carries the depth) */
+.sec-light .wcard{border:1px solid rgba(0,0,0,.06);box-shadow:0 18px 40px rgba(20,22,28,.07)}
+.sec-light .wcard:hover{box-shadow:0 26px 56px rgba(20,22,28,.11)}
+
+/* ============================================================
+   HOME v4 — hero (no video), vibrant work backdrops, pricing flip,
+   before/after compare, statement word-reveal
+   ============================================================ */
+
+/* HERO: cinematic video, softened to ambient depth (masks the clip's diagonal banding) */
+.hero-cine{background:#000}
+.hero-cine .hero-vid{filter:blur(13px) brightness(.58) contrast(1.05) saturate(1.1)}
+.hero-cine::after{background:linear-gradient(180deg,rgba(0,0,0,.76) 0%,rgba(0,0,0,.64) 34%,rgba(0,0,0,.68) 62%,rgba(0,0,0,.97) 100%)}
+
+/* WORK card backdrops — vibrant, with radial depth */
+.wcard.bg-omnes{background:radial-gradient(125% 120% at 50% -12%,#FFEFA6 0%,#FFD60A 48%,#E7BE00 100%)}
+.wcard.bg-allseasons{background:radial-gradient(125% 120% at 50% -12%,#E6FFAD 0%,#B8FF00 48%,#97D600 100%)}
+.wcard.bg-quench{background:radial-gradient(125% 120% at 50% -12%,#FFC196 0%,#FF6B00 48%,#E15F00 100%)}
+.wcard.bg-obxhs{background:radial-gradient(125% 120% at 50% -12%,#FF9AC8 0%,#FF0080 48%,#D4006C 100%)}
+
+/* SELECTED WORK — site shown on a laptop, floating on the backdrop */
+.wcard .device{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:13% 12% 14%}
+.wcard .laptop{width:100%;filter:drop-shadow(0 26px 38px rgba(0,0,0,.34));transition:transform .7s cubic-bezier(.16,1,.3,1)}
+.wcard:hover .laptop{transform:translateY(-6px)}
+.laptop-screen{width:84%;margin:0 auto;aspect-ratio:16/10;background:#0c0c0d;border:7px solid #181819;border-radius:13px 13px 3px 3px;overflow:hidden}
+.wcard .laptop-screen img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
+.wcard:hover .laptop-screen img{transform:none}
+.laptop-base{width:100%;height:13px;background:linear-gradient(180deg,#44474c 0%,#27292c 55%,#0f1011 100%);border-radius:0 0 12px 12px}
+.laptop-base::before{content:"";display:block;width:17%;height:6px;margin:0 auto;background:#0d0d0e;border-radius:0 0 7px 7px}
+
+/* PRICING flip: 3 standard tiers dark, top tier white */
+.sec-dark .pcard.light{background:#fff;color:var(--ink);box-shadow:0 26px 64px rgba(0,0,0,.55)}
+
+/* BEFORE / AFTER compare slider (in the split media) */
+.split-media{position:relative}
+.split-media .ba-slide{position:absolute;inset:0;--pos:50%;overflow:hidden;border-radius:inherit;user-select:none;touch-action:pan-y}
+.split-media .ba-slide img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
+.ba-after{z-index:1}
+.ba-before{z-index:2;clip-path:inset(0 calc(100% - var(--pos)) 0 0)}
+.ba-divider{position:absolute;top:0;bottom:0;left:var(--pos);width:2px;margin-left:-1px;background:#fff;z-index:3;pointer-events:none;box-shadow:0 0 0 1px rgba(0,0,0,.12)}
+.ba-handle{position:absolute;top:50%;left:50%;width:42px;height:42px;margin:-21px 0 0 -21px;border-radius:50%;background:#fff;box-shadow:0 6px 18px rgba(0,0,0,.38);display:flex;align-items:center;justify-content:center}
+.ba-handle::before{content:"⇆";color:#111;font-size:16px;font-weight:700}
+.ba-range{position:absolute;inset:0;width:100%;height:100%;margin:0;padding:0;opacity:0;cursor:ew-resize;z-index:4}
+.ba-pill{position:absolute;bottom:14px;z-index:3;font-family:var(--display);font-size:10px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:#fff;background:rgba(8,8,8,.6);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:6px 11px;border-radius:999px;pointer-events:none}
+.ba-pill-before{left:14px}
+.ba-pill-after{right:14px}
+
+/* INTRO STATEMENT — word-by-word scroll reveal (dim → white), serif em preserved */
+.statement-reveal .sw{color:#363636;transition:color .5s ease}
+.statement-reveal .sw.on{color:#fff}
+.statement-reveal .sw-em{font-family:var(--serif);font-style:italic}
+.statement-reveal .sw-em.on{color:var(--mute-2)}

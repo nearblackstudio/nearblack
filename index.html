@@ -29,7 +29,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Serif+4:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css?v=12">
+<link rel="stylesheet" href="assets/style.css?v=16">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"ProfessionalService","@id":"https://nearblack.com/#studio","name":"NearBlack","alternateName":"NearBlack Studio","description":"Design studio specializing in fast, affordable website refreshes for business owners.","url":"https://nearblack.com","logo":"https://nearblack.com/assets/icon-512.png","image":"https://nearblack.com/assets/og-image.png","email":"hello@nearblack.com","priceRange":"$499 - $5,999","areaServed":{"@type":"Country","name":"United States"},"foundingDate":"2026","serviceType":"Website design, website refresh, website redesign","slogan":"Refreshes for the websites that already deserve better."},{"@type":"WebSite","@id":"https://nearblack.com/#website","url":"https://nearblack.com","name":"NearBlack","publisher":{"@id":"https://nearblack.com/#studio"},"inLanguage":"en-US"}]}
 </script>
@@ -57,22 +57,11 @@
   <a href="https://calendly.com/hello-nearblack/15-minute-meeting" target="_blank" rel="noopener" class="mob-cta">Book a call</a>
 </div>
 
-<!-- HERO (cinematic dark video) -->
+<!-- HERO (cinematic video) -->
 <header class="hero-cine">
   <video class="hero-vid" autoplay muted loop playsinline preload="auto">
     <source src="assets/hero.mp4" type="video/mp4">
   </video>
-
-  <div class="notif-stack" aria-hidden="true">
-    <a href="https://calendly.com/hello-nearblack/15-minute-meeting" target="_blank" rel="noopener" class="notif">
-      <div class="notif-icon">N</div>
-      <div class="notif-body">
-        <div class="notif-title">Book a call</div>
-        <div class="notif-sub">Free 15-minute intro</div>
-      </div>
-      <div class="notif-act">CONTACT</div>
-    </a>
-  </div>
 
   <div class="hero-inner">
     <h1><span class="ln scramble" data-text="A design studio for"></span><span class="ln scramble" data-text="the websites you already have."></span></h1>
@@ -88,12 +77,63 @@
 <!-- CENTERED INTRO STATEMENT -->
 <section class="statement-c">
   <div class="wrap">
-    <p class="statement-big">We refresh the websites you already have, <em>and make them worth looking at.</em></p>
+    <p class="statement-big statement-reveal">We refresh the websites you already have, <em>and make them worth looking at.</em></p>
     <a href="/portfolio" class="btn btn-light">View all work →</a>
   </div>
 </section>
 
-<!-- SPLIT FEATURE (light) -->
+<!-- WORK CARDS (white bg) -->
+<section class="sec-light">
+  <div class="wrap">
+    <div class="work-head reveal">
+      <div>
+        <div class="eyebrow">Selected work</div>
+        <h2 class="section-title" style="margin-top:18px;margin-bottom:0">Recently refreshed.</h2>
+      </div>
+      <a href="/portfolio" class="more">View all →</a>
+    </div>
+    <div class="work-cards">
+      <a href="https://omnes.io" target="_blank" rel="noopener" class="wcard bg-omnes reveal">
+        <div class="device">
+          <div class="laptop">
+            <div class="laptop-screen"><img src="assets/omnes-preview.jpg" alt="Omnes website refresh by NearBlack" loading="lazy"></div>
+            <div class="laptop-base"></div>
+          </div>
+        </div>
+        <div class="wcard-label"><div class="wcard-ico">O</div><div><div class="wcard-name">Omnes</div><div class="wcard-desc">The refresh that started the studio</div></div></div>
+      </a>
+      <a href="https://allseasonsnh.com" target="_blank" rel="noopener" class="wcard bg-allseasons reveal d1">
+        <div class="device">
+          <div class="laptop">
+            <div class="laptop-screen"><img src="assets/allseasons-preview.jpg" alt="All Seasons website refresh by NearBlack" loading="lazy"></div>
+            <div class="laptop-base"></div>
+          </div>
+        </div>
+        <div class="wcard-label"><div class="wcard-ico">A</div><div><div class="wcard-name">All Seasons</div><div class="wcard-desc">Outdated site, rebuilt in a day</div></div></div>
+      </a>
+      <a href="/quench" class="wcard bg-quench reveal">
+        <div class="device">
+          <div class="laptop">
+            <div class="laptop-screen"><img src="assets/quench-preview.jpg" alt="Quench Water Co website refresh by NearBlack" loading="lazy"></div>
+            <div class="laptop-base"></div>
+          </div>
+        </div>
+        <div class="wcard-label"><div class="wcard-ico">Q</div><div><div class="wcard-name">Quench Water Co</div><div class="wcard-desc">Tired Wix template, made thirsty</div></div></div>
+      </a>
+      <a href="/obxhs" class="wcard bg-obxhs reveal d1">
+        <div class="device">
+          <div class="laptop">
+            <div class="laptop-screen"><img src="assets/obxhs-preview.jpg?v=2" alt="OBX Home Solutions website refresh by NearBlack" loading="lazy"></div>
+            <div class="laptop-base"></div>
+          </div>
+        </div>
+        <div class="wcard-label"><div class="wcard-ico">OB</div><div><div class="wcard-name">OBX Home Solutions</div><div class="wcard-desc">From a Facebook page to a real site</div></div></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- THE APPROACH — before / after compare -->
 <section>
   <div class="wrap split">
     <div class="split-text reveal">
@@ -103,12 +143,19 @@
       <a href="/portfolio" class="btn btn-dark">See the work →</a>
     </div>
     <div class="split-media reveal d1">
-      <img src="assets/omnes-preview.jpg" alt="A NearBlack website refresh" loading="lazy">
+      <div class="ba-slide">
+        <img class="ba-after" src="assets/quench-preview.jpg" alt="Quench Water Co after the NearBlack refresh" loading="lazy">
+        <img class="ba-before" src="assets/quench-before.jpg" alt="Quench Water Co before the refresh — the old site" loading="lazy">
+        <div class="ba-divider"><span class="ba-handle"></span></div>
+        <span class="ba-pill ba-pill-before">Before</span>
+        <span class="ba-pill ba-pill-after">After</span>
+        <input type="range" min="0" max="100" value="50" class="ba-range" aria-label="Drag to compare the site before and after the refresh">
+      </div>
     </div>
   </div>
 </section>
 
-<!-- SERVICES (dark, moved here) -->
+<!-- SERVICES -->
 <section>
   <div class="wrap">
     <div class="section-label eyebrow reveal">What we do</div>
@@ -126,39 +173,8 @@
   </div>
 </section>
 
-<!-- WORK CARDS (light, rounded) -->
-<section>
-  <div class="wrap">
-    <div class="work-head reveal">
-      <div>
-        <div class="eyebrow">Selected work</div>
-        <h2 class="section-title" style="margin-top:18px;margin-bottom:0">Recently refreshed.</h2>
-      </div>
-      <a href="/portfolio" class="more">View all →</a>
-    </div>
-    <div class="work-cards">
-      <a href="https://omnes.io" target="_blank" rel="noopener" class="wcard reveal">
-        <img src="assets/omnes-preview.jpg" alt="omnes.io" loading="lazy">
-        <div class="wcard-label"><div class="wcard-ico">O</div><div><div class="wcard-name">Omnes</div><div class="wcard-desc">The refresh that started the studio</div></div></div>
-      </a>
-      <a href="https://allseasonsnh.com" target="_blank" rel="noopener" class="wcard reveal d1">
-        <img src="assets/allseasons-preview.jpg" alt="allseasonsnh.com" loading="lazy">
-        <div class="wcard-label"><div class="wcard-ico">A</div><div><div class="wcard-name">All Seasons</div><div class="wcard-desc">Outdated site, rebuilt in a day</div></div></div>
-      </a>
-      <a href="/quench" class="wcard reveal">
-        <img src="assets/quench-preview.jpg" alt="Quench Water Co" loading="lazy">
-        <div class="wcard-label"><div class="wcard-ico">Q</div><div><div class="wcard-name">Quench Water Co</div><div class="wcard-desc">Tired Wix template, made thirsty</div></div></div>
-      </a>
-      <a href="/obxhs" class="wcard reveal d1">
-        <img src="assets/obxhs-preview.jpg?v=2" alt="obxhs.com" loading="lazy">
-        <div class="wcard-label"><div class="wcard-ico">OB</div><div><div class="wcard-name">OBX Home Solutions</div><div class="wcard-desc">From a Facebook page to a real site</div></div></div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- PRICING (white, big cards) -->
-<section class="sec-light">
+<!-- PRICING (black bg, big cards) -->
+<section class="sec-dark">
   <div class="wrap">
     <div class="work-head">
       <div>
@@ -168,7 +184,7 @@
       <a href="https://calendly.com/hello-nearblack/15-minute-meeting" target="_blank" rel="noopener" class="more">Looking for something else? Speak to us →</a>
     </div>
     <div class="price-row">
-      <div class="pcard">
+      <div class="pcard dark">
         <div class="pcard-top"><div class="pcard-ico">01</div><div class="pcard-chip">72 hours</div></div>
         <div class="pcard-name">Launch</div>
         <div class="pcard-desc">One sharp, professional page for founders and local businesses who need their site fixed fast.</div>
@@ -182,7 +198,7 @@
           <li>1 round of revisions</li>
         </ul>
       </div>
-      <div class="pcard">
+      <div class="pcard dark">
         <div class="pcard-top"><div class="pcard-ico">02</div><div class="pcard-chip">3 days</div></div>
         <div class="pcard-name">Business</div>
         <div class="pcard-desc">Up to 6 pages to build credibility and generate leads for a growing business.</div>
@@ -196,7 +212,7 @@
           <li>Full SEO setup included</li>
         </ul>
       </div>
-      <div class="pcard">
+      <div class="pcard dark">
         <div class="pcard-top"><div class="pcard-ico">03</div><div class="pcard-chip">5 days</div></div>
         <div class="pcard-name">Growth</div>
         <div class="pcard-desc">Up to 10 pages, built for growth, content, and ranking over time.</div>
@@ -210,7 +226,7 @@
           <li>6 months hosting included</li>
         </ul>
       </div>
-      <div class="pcard dark">
+      <div class="pcard light">
         <div class="pcard-top"><div class="pcard-ico">04</div><div class="pcard-chip">10 days</div></div>
         <div class="pcard-name">Authority</div>
         <div class="pcard-desc">Up to 20 pages, a premium digital presence for established businesses.</div>
@@ -338,6 +354,44 @@ if(!reduce&&"IntersectionObserver"in window){
   upd();
   window.addEventListener("scroll",upd,{passive:true});
   window.addEventListener("resize",upd,{passive:true});
+})();
+
+// Intro statement: reveal words one-by-one on scroll (preserves the serif <em>)
+(function(){
+  var el=document.querySelector(".statement-reveal");
+  if(!el)return;
+  var html="";
+  Array.prototype.forEach.call(el.childNodes,function(node){
+    var isEm=node.nodeType===1&&node.tagName==="EM";
+    node.textContent.split(/(\s+)/).forEach(function(tok){
+      if(tok==="")return;
+      if(/^\s+$/.test(tok)){html+=tok;}
+      else{html+='<span class="sw'+(isEm?" sw-em":"")+'">'+tok+"</span>";}
+    });
+  });
+  el.innerHTML=html;
+  var words=el.querySelectorAll(".sw");
+  if(reduce){words.forEach(function(w){w.classList.add("on");});return;}
+  function su(){
+    var vh=window.innerHeight,r=el.getBoundingClientRect();
+    var frac=Math.max(0,Math.min(1,(vh*0.85-r.top)/(vh*0.55)));
+    var k=Math.round(frac*words.length);
+    words.forEach(function(w,i){w.classList.toggle("on",i<k);});
+  }
+  su();
+  window.addEventListener("scroll",su,{passive:true});
+  window.addEventListener("resize",su,{passive:true});
+})();
+
+// Before / after compare slider
+(function(){
+  document.querySelectorAll(".ba-slide").forEach(function(s){
+    var r=s.querySelector(".ba-range");
+    if(!r)return;
+    var set=function(){s.style.setProperty("--pos",r.value+"%");};
+    set();
+    r.addEventListener("input",set);
+  });
 })();
 </script>
 <script>(function(){var n=document.querySelector("nav");if(!n)return;var last=0;window.addEventListener("scroll",function(){var y=window.pageYOffset;if(y>last&&y>140){n.classList.add("nav-hidden")}else{n.classList.remove("nav-hidden")}last=y},{passive:true})})();</script>
