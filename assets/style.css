@@ -1017,6 +1017,11 @@ section,.sec-light,.statement-c,.hero-cine,.hero-sm,.final,.purpose,.marquee{bor
 /* OBXHS desktop hero is wide/short — fill the laptop screen (cover) instead of letterboxing */
 .wcard.bg-obxhs .laptop-screen img{object-fit:cover}
 
+/* Phone cards are PORTRAIT so the slim phone fills them (laptops stay landscape) */
+.work-cards{align-items:start}
+.wcard.card-phone{aspect-ratio:4/5}
+.wcard.card-phone .phone{top:6%;height:104%}
+
 /* phone (mobile version) — two of the cards */
 .device-phone{padding:0!important;display:block}
 .wcard .phone{position:absolute;left:50%;top:10%;transform:translateX(-50%);height:104%;width:auto;background:#0b0b0c;border-radius:42px;padding:6px;box-shadow:0 30px 55px rgba(0,0,0,.42);transition:transform .7s cubic-bezier(.16,1,.3,1)}
