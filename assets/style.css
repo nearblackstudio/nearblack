@@ -7,8 +7,9 @@
   --mute-2:#b8b8b8;
   --line:rgba(255,255,255,.12);
   --line-strong:rgba(255,255,255,.22);
-  --display:'Archivo',ui-sans-serif,system-ui,sans-serif;
-  --sans:'Inter',ui-sans-serif,system-ui,sans-serif;
+  --display:'DM Sans',ui-sans-serif,system-ui,sans-serif;
+  --sans:'DM Sans',ui-sans-serif,system-ui,sans-serif;
+  --serif:'Source Serif 4',Georgia,'Times New Roman',serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -710,7 +711,7 @@ body.home nav.scrolled{background:var(--bg);border-bottom-color:var(--line)}
 /* ============================================================
    HAPTIC x INSTRUMENT  ·  black & white system  (v8)
    ============================================================ */
-:root{ --ink:#0b0b0b; --paper:#f4f3ef; --paper-2:#e9e7e0; }
+:root{ --ink:#0b0b0b; --paper:#ffffff; --paper-2:#f0f0f0; }
 
 /* buttons: rounded-rectangle, never pills */
 .cta-nav{border-radius:12px}
@@ -754,7 +755,7 @@ body.home nav.scrolled{background:var(--bg);border-bottom-color:var(--line)}
 .purpose .eyebrow{color:#6b6b6b}
 .purpose .eyebrow::before{background:#a3a09a}
 .purpose-lead{max-width:38ch;font-size:clamp(18px,1.7vw,26px);line-height:1.42;color:var(--ink);font-family:var(--display);font-weight:500;letter-spacing:-.012em;margin:36px 0 64px;position:relative;z-index:2}
-.purpose-giant{font-family:var(--display);font-weight:500;font-size:clamp(64px,16vw,250px);line-height:.84;letter-spacing:-.04em;color:#dad8d0;margin:0}
+.purpose-giant{font-family:var(--serif);font-weight:400;font-size:clamp(64px,16vw,250px);line-height:.86;letter-spacing:-.02em;color:#d2d2d2;margin:0}
 .purpose-giant span{display:block}
 
 /* WORK CARDS (rounded image cards w/ corner label) */
@@ -797,3 +798,66 @@ footer{background:var(--paper);color:var(--ink);border-top:1px solid rgba(0,0,0,
   .ftr-main{grid-template-columns:1fr}
   .ftr-bottom{flex-direction:column;align-items:flex-start;gap:10px}
 }
+
+/* ============================================================
+   FULL-WIDTH (edge to edge) + SERIF ACCENTS (DM Sans / Source Serif 4)
+   ============================================================ */
+.wrap{max-width:none;margin:0;width:100%}
+.hero-cine .hero-inner{max-width:none}
+.ftr-main,.ftr-bottom{max-width:none}
+.section-title{max-width:none}
+
+/* serif italic on the large editorial accent words */
+.display em,.section-title em,.hero-cine h1 em,.hero-sm h1 em,.split-text h2 em,.final-title em,.statement em{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:0}
+
+/* INTRODUCTION + SERVICES (two-column, scroll text-fill) */
+.intro-svc{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,110px);align-items:start}
+.col-label{font-family:var(--display);font-size:13px;font-weight:500;letter-spacing:-.01em;color:#8a8a8a;margin-bottom:30px}
+.intro-svc .fill{font-family:var(--display);font-weight:500;font-size:clamp(22px,2.4vw,38px);line-height:1.22;letter-spacing:-.022em}
+.intro-svc .intro .fill p{margin-bottom:26px}
+.intro-svc .intro .fill p:last-child{margin-bottom:0}
+.intro-svc .svcs .fill{line-height:1.5}
+.fw{color:#d3d3d3;transition:color .35s ease}
+.fw.on{color:var(--ink)}
+.fw.row{display:block}
+@media(max-width:900px){.intro-svc{grid-template-columns:1fr;gap:48px}}
+@media(prefers-reduced-motion:reduce){.fw{color:var(--ink);transition:none}}
+
+/* remove the eyebrow dash everywhere + the hero SCROLL cue */
+.eyebrow::before{content:none !important}
+.hero-scroll{display:none !important}
+
+/* PRICING CARDS v2 (haptic-style: big rounded cards, light + one dark) */
+.price-row{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:48px}
+.pcard{background:#f2f2f2;border-radius:22px;padding:28px 26px 26px;display:flex;flex-direction:column;color:var(--ink)}
+.pcard.dark{background:var(--ink);color:#fff}
+.pcard-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:36px}
+.pcard-ico{width:46px;height:46px;border-radius:13px;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:600;font-size:14px;letter-spacing:-.02em}
+.pcard.dark .pcard-ico{background:#fff;color:var(--ink)}
+.pcard-chip{font-family:var(--display);font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#8a8a8a;background:rgba(0,0,0,.06);padding:6px 11px;border-radius:8px;white-space:nowrap}
+.pcard.dark .pcard-chip{color:#cfcfcf;background:rgba(255,255,255,.12)}
+.pcard-name{font-family:var(--display);font-weight:500;font-size:clamp(28px,2.3vw,40px);letter-spacing:-.03em;line-height:1;margin-bottom:16px}
+.pcard-desc{font-size:13.5px;line-height:1.55;color:#666;margin-bottom:30px;min-height:84px}
+.pcard.dark .pcard-desc{color:#a6a6a6}
+.pcard-price{font-family:var(--display);font-weight:500;font-size:clamp(34px,2.8vw,46px);letter-spacing:-.03em;line-height:1;display:flex;align-items:baseline;gap:7px;margin-bottom:22px}
+.pcard-price sup{font-size:.46em;font-weight:500;align-self:flex-start;margin-top:.32em}
+.pcard-price span{font-size:13px;color:#8a8a8a;font-weight:500;letter-spacing:-.01em}
+.pcard.dark .pcard-price span{color:#a6a6a6}
+.pcard-btn{align-self:flex-start;font-family:var(--display);font-weight:500;font-size:14px;padding:12px 22px;border-radius:12px;background:var(--ink);color:#fff;transition:transform .25s cubic-bezier(.16,1,.3,1),opacity .25s;margin-bottom:28px}
+.pcard-btn:hover{transform:translateY(-2px);opacity:.9}
+.pcard.dark .pcard-btn{background:#fff;color:var(--ink)}
+.pcard-feats{list-style:none;border-top:1px solid rgba(0,0,0,.1);padding-top:22px;display:flex;flex-direction:column;gap:11px;margin-top:auto}
+.pcard.dark .pcard-feats{border-top-color:rgba(255,255,255,.15)}
+.pcard-feats li{font-size:13px;color:#555;line-height:1.4;padding-left:18px;position:relative}
+.pcard.dark .pcard-feats li{color:#bdbdbd}
+.pcard-feats li::before{content:"";position:absolute;left:2px;top:7px;width:5px;height:5px;border-radius:50%;background:#9a9a9a}
+.pcard.dark .pcard-feats li::before{background:#777}
+@media(max-width:1100px){.price-row{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.price-row{grid-template-columns:1fr}}
+
+/* show the FULL website preview (fit, do not crop/zoom) */
+.wcard{background:#fff}
+.wcard img{object-fit:contain;object-position:center}
+.split-media{background:#fff}
+.split-media img{object-fit:contain}
+.project-img img,.project-tile img{object-fit:contain!important;object-position:center!important}

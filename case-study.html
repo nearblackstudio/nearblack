@@ -8,8 +8,8 @@
 <link rel="icon" type="image/png" sizes="16x16" href="assets/icon-16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
-<meta name="author" content="NearBlack Studio">
-<meta name="theme-color" content="#0a0a0a">
+<meta name="author" content="NearBlack LLC">
+<meta name="theme-color" content="#000000">
 <link rel="canonical" href="https://nearblack.com/case-study">
 <meta property="og:site_name" content="NearBlack">
 <meta property="og:type" content="article">
@@ -28,8 +28,8 @@
 <meta name="description" content="We paid an agency six figures and waited six months. Then rebuilt it ourselves in a week for under $5,000. The case study that started NearBlack.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css?v=8">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Serif+4:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css?v=9">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Article","headline":"Omnes · The refresh that started the studio","author":{"@type":"Organization","name":"NearBlack"},"datePublished":"2025","image":"https://nearblack.com/assets/omnes-preview.jpg","mainEntityOfPage":"https://nearblack.com/case-study"}
 </script>
@@ -40,12 +40,11 @@
 <nav>
   <a href="/" class="brand">Near<em>Black</em></a>
   <div class="navlinks">
-    <a href="/portfolio" class="active">Portfolio</a>
+    <a href="/portfolio">Portfolio</a>
     <a href="/blog">Blog</a>
     <a href="/studio">Studio</a>
     <a href="/process">Process</a>
     <a href="/pricing">Pricing</a>
-
   </div>
   <a href="https://calendly.com/hello-nearblack/15-minute-meeting" target="_blank" rel="noopener" class="cta-nav">Book a call</a>
 <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button></nav>
@@ -58,77 +57,96 @@
   <a href="https://calendly.com/hello-nearblack/15-minute-meeting" target="_blank" rel="noopener" class="mob-cta">Book a call</a>
 </div>
 
-<header class="cs-hero">
-  <div class="eyebrow">Case Study · 001 · The one that started the studio</div>
-  <h1>Omnes <em>· omnes.io</em></h1>
-  <dl class="cs-meta">
-    <div><dt>Client</dt><dd>Omnes (ours)</dd></div>
-    <div><dt>URL</dt><dd><a href="https://omnes.io" target="_blank" rel="noopener" style="text-decoration:underline">omnes.io ↗</a></dd></div>
-    <div><dt>Delivered</dt><dd>~ 1 week</dd></div>
-    <div><dt>Year</dt><dd>2025</dd></div>
-  </dl>
+<!-- HERO (dark, small) -->
+<header class="hero-sm">
+  <div class="wrap">
+    <div class="eyebrow reveal">Case Study · 001 · The one that started the studio</div>
+    <h1 class="reveal d1">Omnes <em>· omnes.io</em></h1>
+    <dl class="cs-meta reveal d2">
+      <div><dt>Client</dt><dd>Omnes (ours)</dd></div>
+      <div><dt>URL</dt><dd><a href="https://omnes.io" target="_blank" rel="noopener">omnes.io ↗</a></dd></div>
+      <div><dt>Delivered</dt><dd>~ 1 week</dd></div>
+      <div><dt>Year</dt><dd>2025</dd></div>
+    </dl>
+  </div>
 </header>
 
-<div class="cs-hero-image">
-  <img src="assets/omnes-preview.jpg" alt="omnes.io" loading="lazy">
-</div>
-
-<!-- BODY -->
-<section class="cs-body">
-  <div class="cs-body-grid">
-    <div>
-      <h2>The <em>problem.</em></h2>
+<!-- HERO IMAGE (light, rounded) -->
+<section class="sec-light">
+  <div class="wrap">
+    <div class="split-media reveal" style="aspect-ratio:16/9">
+      <img src="assets/omnes-preview.jpg" alt="omnes.io" loading="lazy">
     </div>
-    <div>
-      <p>We hired an agency to build our company's website. We paid six figures. We waited six months. We gave feedback through three rounds of stakeholder calls, a Figma file nobody updated, and a design system document that ran thirty-two pages.</p>
+  </div>
+</section>
+
+<!-- THE PROBLEM (dark) -->
+<section>
+  <div class="wrap split">
+    <div class="split-text reveal">
+      <div class="eyebrow">The problem</div>
+      <h2 class="section-title" style="margin-top:24px;margin-bottom:0">The <em>problem.</em></h2>
+    </div>
+    <div class="split-text reveal d1">
+      <p style="margin-top:0">We hired an agency to build our company's website. We paid six figures. We waited six months. We gave feedback through three rounds of stakeholder calls, a Figma file nobody updated, and a design system document that ran thirty-two pages.</p>
       <p>When it finally launched, we didn't like it. The hero was generic. The typography was bland. The navigation had been designed for a committee. And the thing took four seconds to load.</p>
       <p>We had paid more for this site than most of our customers pay for a car, and we were embarrassed by it.</p>
     </div>
   </div>
 </section>
 
-<div class="cs-gallery">
-  <img src="assets/omnes-preview.jpg" alt="omnes.io homepage" loading="lazy">
-  <img src="assets/omnes-about.jpg" alt="omnes.io about page" loading="lazy">
-  <img src="assets/omnes-contact.jpg" alt="omnes.io contact page" loading="lazy">
-</div>
+<!-- GALLERY (light, rounded) -->
+<section class="sec-light">
+  <div class="wrap" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+    <div class="split-media reveal" style="aspect-ratio:4/3"><img src="assets/omnes-preview.jpg" alt="omnes.io homepage" loading="lazy"></div>
+    <div class="split-media reveal d1" style="aspect-ratio:4/3"><img src="assets/omnes-about.jpg" alt="omnes.io about page" loading="lazy"></div>
+    <div class="split-media reveal d2" style="aspect-ratio:4/3"><img src="assets/omnes-contact.jpg" alt="omnes.io contact page" loading="lazy"></div>
+  </div>
+</section>
 
-<section class="cs-body">
-  <div class="cs-body-grid">
-    <div>
-      <h2>The <em>approach.</em></h2>
+<!-- THE APPROACH (dark) -->
+<section>
+  <div class="wrap split">
+    <div class="split-text reveal">
+      <div class="eyebrow">The approach</div>
+      <h2 class="section-title" style="margin-top:24px;margin-bottom:0">The <em>approach.</em></h2>
     </div>
-    <div>
-      <p>We decided to rebuild it ourselves over a weekend. The weekend turned into a week. The budget turned out to be under <em>$5,000</em> · most of which was font licensing and hosting.</p>
+    <div class="split-text reveal d1">
+      <p style="margin-top:0">We decided to rebuild it ourselves over a weekend. The weekend turned into a week. The budget turned out to be under <em>$5,000</em> · most of which was font licensing and hosting.</p>
       <p>No mood boards. No stakeholder calls. No Figma. We wrote the copy first. Then we built the site in-browser, iterating on the live URL. When something felt wrong, we changed it that afternoon. When something felt right, we moved on.</p>
       <p>Seven days later, we had a site we were genuinely proud of. Faster. Clearer. More <em>us.</em></p>
     </div>
   </div>
 </section>
 
-<div class="cs-gallery">
-  <img src="assets/omnes-preview.jpg" alt="omnes.io hero detail" loading="lazy">
-  <img src="assets/omnes-contact.jpg" alt="omnes.io contact detail" loading="lazy">
-  <img src="assets/omnes-about.jpg" alt="omnes.io about detail" loading="lazy">
-</div>
+<!-- GALLERY (light, rounded) -->
+<section class="sec-light">
+  <div class="wrap" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+    <div class="split-media reveal" style="aspect-ratio:4/3"><img src="assets/omnes-preview.jpg" alt="omnes.io hero detail" loading="lazy"></div>
+    <div class="split-media reveal d1" style="aspect-ratio:4/3"><img src="assets/omnes-contact.jpg" alt="omnes.io contact detail" loading="lazy"></div>
+    <div class="split-media reveal d2" style="aspect-ratio:4/3"><img src="assets/omnes-about.jpg" alt="omnes.io about detail" loading="lazy"></div>
+  </div>
+</section>
 
-<section class="cs-body">
-  <div class="cs-body-grid">
-    <div>
-      <h2>The <em>realization.</em></h2>
+<!-- THE REALIZATION (dark) -->
+<section>
+  <div class="wrap split">
+    <div class="split-text reveal">
+      <div class="eyebrow">The realization</div>
+      <h2 class="section-title" style="margin-top:24px;margin-bottom:0">The <em>realization.</em></h2>
     </div>
-    <div>
-      <p>A few weeks after launch, we rebuilt our mother's small business website (<a href="https://allseasonsnh.com" target="_blank" rel="noopener" style="text-decoration:underline">allseasonsnh.com</a>) in a single day. Her reaction was the whole reason NearBlack now exists.</p>
+    <div class="split-text reveal d1">
+      <p style="margin-top:0">A few weeks after launch, we rebuilt our mother's small business website (<a href="https://allseasonsnh.com" target="_blank" rel="noopener" style="text-decoration:underline">allseasonsnh.com</a>) in a single day. Her reaction was the whole reason NearBlack now exists.</p>
       <p>We realized the exact problem we'd lived · overpriced, overscoped, overslow · was being lived by every business owner we knew. Most of them had already paid for a site. Most of them quietly hated it. None of them could afford to do it again the traditional way.</p>
       <p>NearBlack is the studio we wished had existed when we needed it.</p>
     </div>
   </div>
 </section>
 
-<!-- STATS -->
-<section style="padding:0">
+<!-- STATS (dark) -->
+<section style="padding-top:0">
   <div class="wrap">
-    <div class="stats">
+    <div class="stats reveal">
       <div class="stat"><div class="stat-num">6<em>mo</em></div><div class="stat-label">Agency Timeline</div></div>
       <div class="stat"><div class="stat-num">1<em>wk</em></div><div class="stat-label">Our Rebuild</div></div>
       <div class="stat"><div class="stat-num">&lt;$5<em>k</em></div><div class="stat-label">Our Cost</div></div>
@@ -137,11 +155,13 @@
   </div>
 </section>
 
+<!-- FINAL CLOSING (dark) -->
 <section class="final">
-  <h2 class="final-title">Ready for a site that<br><em>actually works?</em></h2>
+  <h2 class="final-title">Ready for a site that <em>actually works?</em></h2>
   <a href="https://calendly.com/hello-nearblack/15-minute-meeting" target="_blank" rel="noopener" class="cta-btn">Book a call →</a>
 </section>
 
+<!-- FOOTER (light, instrument-style) -->
 <footer>
   <div class="ftr-main">
     <div class="ftr-news">
@@ -170,6 +190,55 @@
   </div>
 </footer>
 
-<script>const navToggle=document.querySelector(".nav-toggle");const mobileMenu=document.getElementById("mobileMenu");navToggle.addEventListener("click",()=>{navToggle.classList.toggle("open");mobileMenu.classList.toggle("open");navToggle.setAttribute("aria-expanded",mobileMenu.classList.contains("open"));document.body.style.overflow=mobileMenu.classList.contains("open")?"hidden":"";});document.querySelectorAll(".mobile-menu a").forEach(a=>a.addEventListener("click",()=>{navToggle.classList.remove("open");mobileMenu.classList.remove("open");document.body.style.overflow="";}));</script>
+<script>
+// Mobile menu
+const navToggle=document.querySelector(".nav-toggle");
+const mobileMenu=document.getElementById("mobileMenu");
+navToggle.addEventListener("click",()=>{navToggle.classList.toggle("open");mobileMenu.classList.toggle("open");navToggle.setAttribute("aria-expanded",mobileMenu.classList.contains("open"));document.body.style.overflow=mobileMenu.classList.contains("open")?"hidden":"";});
+document.querySelectorAll(".mobile-menu a").forEach(a=>a.addEventListener("click",()=>{navToggle.classList.remove("open");mobileMenu.classList.remove("open");document.body.style.overflow="";}));
+
+// Nav: solid on scroll past hero
+const nav=document.querySelector("nav");
+const onScroll=()=>{nav.classList.toggle("scrolled",window.scrollY>window.innerHeight*0.7);};
+onScroll();window.addEventListener("scroll",onScroll,{passive:true});
+
+// Reveal on scroll (spring fade-up)
+const reduce=window.matchMedia("(prefers-reduced-motion:reduce)").matches;
+if(!reduce&&"IntersectionObserver"in window){
+  const io=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}});},{threshold:0,rootMargin:"0px 0px -10% 0px"});
+  document.querySelectorAll(".reveal").forEach(el=>{
+    if(el.getBoundingClientRect().top < window.innerHeight*0.92){el.classList.add("in");}
+    else{io.observe(el);}
+  });
+}else{
+  document.querySelectorAll(".reveal").forEach(el=>el.classList.add("in"));
+}
+
+// Text-scramble intro on hero
+(function(){
+  const els=document.querySelectorAll(".scramble");
+  const chars="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789·/+";
+  els.forEach((el,idx)=>{
+    const final=el.getAttribute("data-text")||"";
+    if(reduce){el.textContent=final;return;}
+    el.textContent="";
+    const delay=200+idx*160,dur=820,start=performance.now()+delay;
+    function frame(now){
+      if(now<start){requestAnimationFrame(frame);return;}
+      const p=Math.min(1,(now-start)/dur);
+      const revealed=Math.floor(p*final.length);
+      let out="";
+      for(let i=0;i<final.length;i++){
+        const c=final[i];
+        if(i<revealed||c===" "){out+=c;}
+        else{out+=chars[Math.floor(Math.random()*chars.length)];}
+      }
+      el.textContent=out;
+      if(p<1)requestAnimationFrame(frame);else el.textContent=final;
+    }
+    requestAnimationFrame(frame);
+  });
+})();
+</script>
 </body>
 </html>
