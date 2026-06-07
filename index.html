@@ -8,8 +8,8 @@
 <link rel="icon" type="image/png" sizes="16x16" href="assets/icon-16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
-<meta name="author" content="NearBlack Studio">
-<meta name="theme-color" content="#0a0a0a">
+<meta name="author" content="NearBlack LLC">
+<meta name="theme-color" content="#000000">
 <link rel="canonical" href="https://nearblack.com/">
 <meta property="og:site_name" content="NearBlack">
 <meta property="og:type" content="website">
@@ -29,13 +29,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css?v=6">
+<link rel="stylesheet" href="assets/style.css?v=7">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"ProfessionalService","@id":"https://nearblack.com/#studio","name":"NearBlack","alternateName":"NearBlack Studio","description":"Design studio specializing in fast, affordable website refreshes for business owners.","url":"https://nearblack.com","logo":"https://nearblack.com/assets/icon-512.png","image":"https://nearblack.com/assets/og-image.png","email":"hello@nearblack.com","priceRange":"$499 - $5,999","areaServed":{"@type":"Country","name":"United States"},"foundingDate":"2026","serviceType":"Website design, website refresh, website redesign","slogan":"Refreshes for the websites that already deserve better."},{"@type":"WebSite","@id":"https://nearblack.com/#website","url":"https://nearblack.com","name":"NearBlack","publisher":{"@id":"https://nearblack.com/#studio"},"inLanguage":"en-US"}]}
 </script>
 <script defer data-domain="nearblack.com" src="https://plausible.io/js/script.js"></script>
 </head>
-<body>
+<body class="home">
 
 <nav>
   <a href="/" class="brand">Near<em>Black</em></a>
@@ -45,9 +45,8 @@
     <a href="/studio">Studio</a>
     <a href="/process">Process</a>
     <a href="/pricing">Pricing</a>
-
   </div>
-  <a href="/contact" class="cta-nav">Start a Project</a>
+  <a href="https://calendly.com/hello-nearblack/15-minute-meeting" target="_blank" rel="noopener" class="cta-nav">Book a call</a>
 <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button></nav>
 <div class="mobile-menu" id="mobileMenu">
   <a href="/portfolio">Portfolio</a>
@@ -55,48 +54,98 @@
   <a href="/studio">Studio</a>
   <a href="/process">Process</a>
   <a href="/pricing">Pricing</a>
-  <a href="/contact" class="mob-cta">Start a Project</a>
+  <a href="https://calendly.com/hello-nearblack/15-minute-meeting" target="_blank" rel="noopener" class="mob-cta">Book a call</a>
 </div>
 
-<!-- HERO -->
-<header class="hero hero-video">
-  <video class="hero-bg" autoplay muted loop playsinline preload="auto">
-    <source src="assets/hero.mp4" type="video/mp4">
-  </video>
-  <div class="hero-content">
-    <div class="eyebrow">NearBlack · A design studio for the refresh · Est. 2026</div>
-    <h1 class="display">A studio refreshing the websites of business owners who already have one · <em>and know it deserves better.</em></h1>
-    <div class="hero-bottom">
-      <p><strong>NearBlack</strong> rebuilds the site you already have. Live in <strong>72 hours</strong>. From <strong>$499</strong>. 10% deposit. Pay the rest on launch.</p>
-      <div class="hero-meta">
-        <div><strong>72hr</strong>Delivery</div>
-        <div><strong>$499</strong>Starting</div>
-        <div><strong>10%</strong>Deposit</div>
+<!-- CINEMATIC HERO -->
+<header class="hero-cine">
+  <img class="hero-vid" src="assets/pricing-hero.jpg" alt="" fetchpriority="high">
+
+  <div class="notif-stack" aria-hidden="true">
+    <a href="https://calendly.com/hello-nearblack/15-minute-meeting" target="_blank" rel="noopener" class="notif">
+      <div class="notif-icon">N</div>
+      <div class="notif-body">
+        <div class="notif-title">Book a call</div>
+        <div class="notif-sub">Free 15-minute intro</div>
       </div>
+      <div class="notif-act">CONTACT</div>
+    </a>
+    <a href="/obxhs" class="notif">
+      <div class="notif-icon"><img src="assets/obxhs-preview.jpg?v=2" alt=""></div>
+      <div class="notif-body">
+        <div class="notif-title">OBX Home Solutions</div>
+        <div class="notif-sub">New case study</div>
+      </div>
+      <div class="notif-act">VIEW</div>
+    </a>
+  </div>
+
+  <div class="hero-inner">
+    <div class="eyebrow">NearBlack · A studio for the refresh · Est. 2026</div>
+    <h1><span class="ln scramble" data-text="A design studio for"></span><span class="ln scramble" data-text="the websites you already have."></span></h1>
+    <p class="hero-sub">We rebuild the site you've already got into something worth looking at. Live in <strong>72 hours</strong>, from <strong>$499</strong>. 10% deposit, pay the rest on launch.</p>
+    <div class="hero-actions">
+      <a href="https://calendly.com/hello-nearblack/15-minute-meeting" target="_blank" rel="noopener" class="btn-lg">Book a call →</a>
+      <a href="/portfolio" class="btn-lg ghost">View work</a>
     </div>
   </div>
+
+  <div class="hero-scroll" aria-hidden="true">Scroll<span></span></div>
 </header>
 
+<!-- PROOF MARQUEE -->
+<div class="marquee">
+  <div class="marquee-inner">
+    <span>Omnes <i>·</i> All Seasons <i>·</i> Quench Water Co <i>·</i> OBX Home Solutions <i>·</i> Omnes <i>·</i> All Seasons <i>·</i> Quench Water Co <i>·</i> OBX Home Solutions <i>·</i></span>
+    <span>Omnes <i>·</i> All Seasons <i>·</i> Quench Water Co <i>·</i> OBX Home Solutions <i>·</i> Omnes <i>·</i> All Seasons <i>·</i> Quench Water Co <i>·</i> OBX Home Solutions <i>·</i></span>
+  </div>
+</div>
+
+<!-- BIG STATEMENT -->
+<section class="statement-sec">
+  <div class="wrap">
+    <h2 class="statement reveal">We refresh the websites of business owners who already have one <em>and know it deserves better.</em></h2>
+    <p class="statement-sub reveal d1">From a tired template to a site worth looking at, we rebuild what you have. Custom, fast, and yours to keep. We don't do first-time builds and we don't do six-week timelines. We take what's already there and make it right.</p>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section>
+  <div class="wrap">
+    <div class="section-label eyebrow reveal">What we do</div>
+    <h2 class="section-title reveal d1">Everything your refresh needs. <em>Nothing it doesn't.</em></h2>
+    <div class="svc-list">
+      <div class="svc-row reveal"><div class="svc-no">01</div><div class="svc-name">Website Refresh</div><div class="svc-arrow">→</div></div>
+      <div class="svc-row reveal"><div class="svc-no">02</div><div class="svc-name">Full Redesign</div><div class="svc-arrow">→</div></div>
+      <div class="svc-row reveal"><div class="svc-no">03</div><div class="svc-name">SEO &amp; Google Indexing</div><div class="svc-arrow">→</div></div>
+      <div class="svc-row reveal"><div class="svc-no">04</div><div class="svc-name">Performance &amp; Core Web Vitals</div><div class="svc-arrow">→</div></div>
+      <div class="svc-row reveal"><div class="svc-no">05</div><div class="svc-name">Custom Design · No Templates</div><div class="svc-arrow">→</div></div>
+      <div class="svc-row reveal"><div class="svc-no">06</div><div class="svc-name">Mobile Optimization</div><div class="svc-arrow">→</div></div>
+      <div class="svc-row reveal"><div class="svc-no">07</div><div class="svc-name">Content &amp; Structure</div><div class="svc-arrow">→</div></div>
+      <div class="svc-row reveal"><div class="svc-no">08</div><div class="svc-name">Launch &amp; Ownership Transfer</div><div class="svc-arrow">→</div></div>
+    </div>
+  </div>
+</section>
 
 <!-- FEATURED WORK -->
 <section>
   <div class="wrap">
-    <div class="section-label eyebrow">Selected Refreshes · 2026</div>
-    <h2 class="section-title">Selected refreshes. <em>A curated look at the sites we've quietly brought into this decade.</em></h2>
+    <div class="section-label eyebrow reveal">Selected Refreshes · 2026</div>
+    <h2 class="section-title reveal d1">Selected refreshes. <em>A curated look at the sites we've quietly brought into this decade.</em></h2>
     <div class="work-grid">
-      <a href="https://omnes.io" target="_blank" rel="noopener" class="project wide">
+      <a href="https://omnes.io" target="_blank" rel="noopener" class="project wide reveal">
         <div class="project-img">
           <img src="assets/omnes-preview.jpg" alt="omnes.io" loading="lazy">
         </div>
         <div class="project-meta">
           <div>
             <div class="project-name">Omnes <em>· omnes.io</em></div>
-            <div class="project-desc">The one that started the studio. We paid an agency six figures and waited six months. When it shipped, we hated it. So we rebuilt it ourselves in a week for under $5k.</div>
+            <div class="project-desc">The one that started the studio. We paid an agency six figures and waited six months. When it shipped, we disliked it. So we rebuilt it ourselves in a week for under $5k.</div>
           </div>
           <div class="project-tag">Refresh · 2025</div>
         </div>
       </a>
-      <a href="https://allseasonsnh.com" target="_blank" rel="noopener" class="project wide">
+      <a href="https://allseasonsnh.com" target="_blank" rel="noopener" class="project wide reveal">
         <div class="project-img">
           <img src="assets/allseasons-preview.jpg" alt="allseasonsnh.com" loading="lazy">
         </div>
@@ -108,7 +157,7 @@
           <div class="project-tag">Refresh · 2026</div>
         </div>
       </a>
-      <a href="/quench" class="project wide">
+      <a href="/quench" class="project wide reveal">
         <div class="project-img">
           <img src="assets/quench-preview.jpg" alt="quenchwaterco.netlify.app" loading="lazy">
         </div>
@@ -120,7 +169,7 @@
           <div class="project-tag">Refresh · 2026</div>
         </div>
       </a>
-      <a href="/obxhs" class="project wide">
+      <a href="/obxhs" class="project wide reveal">
         <div class="project-img">
           <img src="assets/obxhs-preview.jpg?v=2" alt="obxhs.com" loading="lazy">
         </div>
@@ -139,28 +188,31 @@
   </div>
 </section>
 
-<!-- ORIGIN STORY -->
-<section>
+<!-- STATS -->
+<section style="padding:100px 32px">
   <div class="wrap">
-    <div class="section-label eyebrow">How it started</div>
-    <h2 class="section-title">How it started. <em>One bad website, then one we liked, then a studio for every business owner who's ever quietly hated their homepage.</em></h2>
-    <div class="manifesto-grid">
-      <p>We paid an agency tens of thousands of dollars and waited <em>six months</em> for a website we ended up hating.</p>
-      <p>So we rebuilt it ourselves in a week for under $5,000. And liked it more.</p>
-      <p>A few weeks later, we rebuilt my mother's business site in a <em>single day.</em> Her reaction was the whole reason this studio exists.</p>
-      <p>Now we do it for everyday business owners who have an existing site and deserve better · <em>affordable</em>, <em>fast</em>, and worth looking at.</p>
+    <div class="stats">
+      <div class="stat reveal"><div class="stat-num">72<em>hr</em></div><div class="stat-label">Standard Delivery</div></div>
+      <div class="stat reveal d1"><div class="stat-num">$499</div><div class="stat-label">Starting Price</div></div>
+      <div class="stat reveal d2"><div class="stat-num">10%</div><div class="stat-label">Up-front Deposit</div></div>
+      <div class="stat reveal d3"><div class="stat-num">100<em>%</em></div><div class="stat-label">Custom. No Templates.</div></div>
     </div>
   </div>
 </section>
 
-<!-- STATS -->
-<section style="padding:100px 40px">
+<!-- PROCESS -->
+<section>
   <div class="wrap">
-    <div class="stats">
-      <div class="stat"><div class="stat-num">72<em>hr</em></div><div class="stat-label">Standard Delivery</div></div>
-      <div class="stat"><div class="stat-num">$499</div><div class="stat-label">Starting Price</div></div>
-      <div class="stat"><div class="stat-num">10%</div><div class="stat-label">Up-front Deposit</div></div>
-      <div class="stat"><div class="stat-num">100<em>%</em></div><div class="stat-label">Custom. No Templates.</div></div>
+    <div class="section-label eyebrow reveal">The Process</div>
+    <h2 class="section-title reveal d1">Four days. <em>Sometimes three. Never six weeks.</em></h2>
+    <div class="steps">
+      <div class="step reveal"><div class="step-num">· 01</div><h3>A <em>short</em> call.</h3><p>Fifteen minutes. We learn your business, your customers, and what's working. That's it.</p></div>
+      <div class="step reveal d1"><div class="step-num">· 02</div><h3>We <em>design</em>.</h3><p>No decks. No mood boards. A real, custom site you can click through within 48 hours.</p></div>
+      <div class="step reveal d2"><div class="step-num">· 03</div><h3>You <em>review</em>.</h3><p>Tell us what to change. We change it the same day. Most projects need one round.</p></div>
+      <div class="step reveal d3"><div class="step-num">· 04</div><h3>We <em>launch</em>.</h3><p>You pay only when you love it. We transfer ownership. You get back to work.</p></div>
+    </div>
+    <div style="text-align:center;margin-top:80px">
+      <a href="/process" class="cta-btn" style="background:transparent;color:var(--fg);border:1px solid var(--line)">See the Full Process →</a>
     </div>
   </div>
 </section>
@@ -171,19 +223,67 @@
   <cite>· The Founder</cite>
 </section>
 
-<!-- PROCESS TEASER -->
+<!-- PRICING -->
 <section>
   <div class="wrap">
-    <div class="section-label eyebrow">The Process</div>
-    <h2 class="section-title">Four days. <em>Sometimes three. Never six weeks.</em></h2>
-    <div class="steps">
-      <div class="step"><div class="step-num">· 01</div><h3>A <em>short</em> call.</h3><p>Fifteen minutes. We learn your business, your customers, and what's working. That's it.</p></div>
-      <div class="step"><div class="step-num">· 02</div><h3>We <em>design</em>.</h3><p>No decks. No mood boards. A real, custom site you can click through within 48 hours.</p></div>
-      <div class="step"><div class="step-num">· 03</div><h3>You <em>review</em>.</h3><p>Tell us what to change. We change it the same day. Most projects need one round.</p></div>
-      <div class="step"><div class="step-num">· 04</div><h3>We <em>launch</em>.</h3><p>You pay only when you love it. We transfer ownership. You get back to work.</p></div>
+    <div class="section-label eyebrow reveal">Engagements</div>
+    <h2 class="section-title reveal d1">Four ways to refresh. <em>Fixed scope, fixed price. 10% deposit, pay the rest on launch.</em></h2>
+    <div class="price-grid">
+      <div class="price-card reveal">
+        <div class="pc-top"><div class="pc-name">The <em>Launch</em></div><div class="pc-delivery">72 hrs</div></div>
+        <div class="pc-price">$499</div>
+        <div class="pc-desc">One sharp, professional page for founders and local businesses.</div>
+        <ul>
+          <li>Full one-page redesign, no templates</li>
+          <li>Mobile-responsive design</li>
+          <li>Contact form</li>
+          <li>Basic SEO + Google indexing</li>
+          <li>1 round of revisions</li>
+        </ul>
+        <a href="https://calendly.com/hello-nearblack/15-minute-meeting" target="_blank" rel="noopener" class="pc-btn">Book a call</a>
+      </div>
+      <div class="price-card reveal d1">
+        <div class="pc-top"><div class="pc-name">The <em>Business</em></div><div class="pc-delivery">3 days</div></div>
+        <div class="pc-price">$999</div>
+        <div class="pc-desc">Up to 6 pages to build credibility and generate leads.</div>
+        <ul>
+          <li>Everything in Launch</li>
+          <li>Up to 6 custom pages</li>
+          <li>Copywriting assistance</li>
+          <li>Google Business Profile</li>
+          <li>Full SEO setup included</li>
+        </ul>
+        <a href="https://calendly.com/hello-nearblack/15-minute-meeting" target="_blank" rel="noopener" class="pc-btn">Book a call</a>
+      </div>
+      <div class="price-card reveal d2">
+        <div class="pc-top"><div class="pc-name">The <em>Growth</em></div><div class="pc-delivery">5 days</div></div>
+        <div class="pc-price">$1,999</div>
+        <div class="pc-desc">Up to 10 pages, built for growth.</div>
+        <ul>
+          <li>Everything in Business</li>
+          <li>Up to 10 custom pages</li>
+          <li>Blog or Substack setup</li>
+          <li>Advanced SEO optimization</li>
+          <li>6 months hosting included</li>
+        </ul>
+        <a href="https://calendly.com/hello-nearblack/15-minute-meeting" target="_blank" rel="noopener" class="pc-btn">Book a call</a>
+      </div>
+      <div class="price-card reveal d3">
+        <div class="pc-top"><div class="pc-name">The <em>Authority</em></div><div class="pc-delivery">10 days</div></div>
+        <div class="pc-price">$5,999</div>
+        <div class="pc-desc">Up to 20 pages, a premium digital presence.</div>
+        <ul>
+          <li>Everything in Growth</li>
+          <li>Up to 20 custom pages</li>
+          <li>Custom site architecture</li>
+          <li>Content migration</li>
+          <li>12 months hosting + 6 months care</li>
+        </ul>
+        <a href="https://calendly.com/hello-nearblack/15-minute-meeting" target="_blank" rel="noopener" class="pc-btn">Book a call</a>
+      </div>
     </div>
-    <div style="text-align:center;margin-top:80px">
-      <a href="/process" class="cta-btn" style="background:transparent;color:var(--fg);border:1px solid var(--line)">See the Full Process →</a>
+    <div style="text-align:center;margin-top:64px">
+      <a href="/pricing" class="cta-btn" style="background:transparent;color:var(--fg);border:1px solid var(--line)">See Full Pricing →</a>
     </div>
   </div>
 </section>
@@ -191,7 +291,7 @@
 <!-- FINAL CTA -->
 <section class="final">
   <h2 class="final-title">Let's refresh your site. <em>Fast, affordable, and worth looking at.</em></h2>
-  <a href="/contact" class="cta-btn">Start a Project →</a>
+  <a href="https://calendly.com/hello-nearblack/15-minute-meeting" target="_blank" rel="noopener" class="cta-btn">Book a call →</a>
 </section>
 
 <!-- FOOTER -->
@@ -221,17 +321,68 @@
   <div>
     <h4>Contact</h4>
     <ul>
+      <li><a href="https://calendly.com/hello-nearblack/15-minute-meeting" target="_blank" rel="noopener">Book a call</a></li>
       <li><a href="mailto:hello@nearblack.com">hello@nearblack.com</a></li>
       <li><a href="/terms">Terms of Use</a></li>
       <li><a href="/privacy">Privacy Policy</a></li>
     </ul>
   </div>
   <div class="foot-bottom">
-    <div>© 2026 NearBlack.</div>
+    <div>© 2026 NearBlack LLC.</div>
     <div>A shade shy of black.</div>
   </div>
 </footer>
 
-<script>const navToggle=document.querySelector(".nav-toggle");const mobileMenu=document.getElementById("mobileMenu");navToggle.addEventListener("click",()=>{navToggle.classList.toggle("open");mobileMenu.classList.toggle("open");navToggle.setAttribute("aria-expanded",mobileMenu.classList.contains("open"));document.body.style.overflow=mobileMenu.classList.contains("open")?"hidden":"";});document.querySelectorAll(".mobile-menu a").forEach(a=>a.addEventListener("click",()=>{navToggle.classList.remove("open");mobileMenu.classList.remove("open");document.body.style.overflow="";}));</script>
+<script>
+// Mobile menu
+const navToggle=document.querySelector(".nav-toggle");
+const mobileMenu=document.getElementById("mobileMenu");
+navToggle.addEventListener("click",()=>{navToggle.classList.toggle("open");mobileMenu.classList.toggle("open");navToggle.setAttribute("aria-expanded",mobileMenu.classList.contains("open"));document.body.style.overflow=mobileMenu.classList.contains("open")?"hidden":"";});
+document.querySelectorAll(".mobile-menu a").forEach(a=>a.addEventListener("click",()=>{navToggle.classList.remove("open");mobileMenu.classList.remove("open");document.body.style.overflow="";}));
+
+// Nav: solid on scroll past hero
+const nav=document.querySelector("nav");
+const onScroll=()=>{nav.classList.toggle("scrolled",window.scrollY>window.innerHeight*0.7);};
+onScroll();window.addEventListener("scroll",onScroll,{passive:true});
+
+// Reveal on scroll (spring fade-up)
+const reduce=window.matchMedia("(prefers-reduced-motion:reduce)").matches;
+if(!reduce&&"IntersectionObserver"in window){
+  const io=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}});},{threshold:0,rootMargin:"0px 0px -10% 0px"});
+  document.querySelectorAll(".reveal").forEach(el=>{
+    // already in or above the viewport (anchor jump, restored scroll, fast scroll) -> show now
+    if(el.getBoundingClientRect().top < window.innerHeight*0.92){el.classList.add("in");}
+    else{io.observe(el);}
+  });
+}else{
+  document.querySelectorAll(".reveal").forEach(el=>el.classList.add("in"));
+}
+
+// Text-scramble intro on hero
+(function(){
+  const els=document.querySelectorAll(".scramble");
+  const chars="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789·/+";
+  els.forEach((el,idx)=>{
+    const final=el.getAttribute("data-text")||"";
+    if(reduce){el.textContent=final;return;}
+    el.textContent="";
+    const delay=200+idx*160,dur=820,start=performance.now()+delay;
+    function frame(now){
+      if(now<start){requestAnimationFrame(frame);return;}
+      const p=Math.min(1,(now-start)/dur);
+      const revealed=Math.floor(p*final.length);
+      let out="";
+      for(let i=0;i<final.length;i++){
+        const c=final[i];
+        if(i<revealed||c===" "){out+=c;}
+        else{out+=chars[Math.floor(Math.random()*chars.length)];}
+      }
+      el.textContent=out;
+      if(p<1)requestAnimationFrame(frame);else el.textContent=final;
+    }
+    requestAnimationFrame(frame);
+  });
+})();
+</script>
 </body>
 </html>
