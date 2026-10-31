@@ -7,9 +7,9 @@
   --mute-2:#b8b8b8;
   --line:rgba(255,255,255,.12);
   --line-strong:rgba(255,255,255,.22);
-  --display:'DM Sans',ui-sans-serif,system-ui,sans-serif;
-  --sans:'DM Sans',ui-sans-serif,system-ui,sans-serif;
-  --serif:'Source Serif 4',Georgia,'Times New Roman',serif;
+  --display:'Inter',-apple-system,BlinkMacSystemFont,ui-sans-serif,system-ui,sans-serif;
+  --sans:'Inter',-apple-system,BlinkMacSystemFont,ui-sans-serif,system-ui,sans-serif;
+  --serif:'Inter',-apple-system,BlinkMacSystemFont,ui-sans-serif,system-ui,sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -800,7 +800,7 @@ footer{background:var(--paper);color:var(--ink);border-top:1px solid rgba(0,0,0,
 }
 
 /* ============================================================
-   FULL-WIDTH (edge to edge) + SERIF ACCENTS (DM Sans / Source Serif 4)
+   FULL-WIDTH (edge to edge) + ACCENTS (Inter)
    ============================================================ */
 .wrap{max-width:none;margin:0;width:100%}
 .hero-cine .hero-inner{max-width:none}
