@@ -1,0 +1,56 @@
+# Deploys nearblack.com on every push to main.
+# The Vercel project lives in the Jinu (jinuapp) team, whose GitHub login can't see this repo,
+# so we deploy with the Vercel CLI instead of Vercel's Git integration.
+# Needs one repo secret: VERCEL_TOKEN (a Vercel token from the Jinu account).
+# The team and project IDs below are identifiers, not credentials.
+name: Deploy to Vercel
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: vercel-production
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+      VERCEL_ORG_ID: team_xAEA9HRJnWOT7auvHZzSDZRf
+      VERCEL_PROJECT_ID: prj_wyuXBWl6o1kQaMpmaNPhz2xgsr41
+    steps:
+      - name: Check for Vercel token
+        id: token
+        run: |
+          if [ -z "$VERCEL_TOKEN" ]; then
+            echo "::notice::VERCEL_TOKEN secret is not set yet, skipping deploy."
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/checkout@v4
+        if: steps.token.outputs.ready == 'true'
+
+      # Deploy without git metadata: Vercel's Jinu team can't read this repo, and a git-linked
+      # deploy would fail and move the production alias off nearblack.com.
+      - name: Remove git metadata
+        if: steps.token.outputs.ready == 'true'
+        run: rm -rf .git
+
+      - uses: actions/setup-node@v4
+        if: steps.token.outputs.ready == 'true'
+        with:
+          node-version: 20
+
+      - name: Deploy to production
+        if: steps.token.outputs.ready == 'true'
+        run: |
+          npm install --global vercel@50.32.5
+          vercel deploy --prod --yes --token "$VERCEL_TOKEN"
