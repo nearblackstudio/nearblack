@@ -8,11 +8,11 @@
   <!-- brand wordmark -->
   <text x="80" y="340" fill="#f6f3ec" font-family="Helvetica Neue,Arial,sans-serif" font-size="88" font-weight="800" letter-spacing="-2.5">Near<tspan fill="#999" font-weight="400">Black</tspan></text>
   <!-- tagline -->
-  <text x="80" y="410" fill="#888" font-family="Helvetica Neue,Arial,sans-serif" font-size="28" font-weight="500" letter-spacing="-0.3">Refreshes for the websites that already deserve better.</text>
+  <text x="80" y="410" fill="#888" font-family="Helvetica Neue,Arial,sans-serif" font-size="28" font-weight="500" letter-spacing="-0.3">AI-native web design and online presence for growing businesses.</text>
   <!-- stats bar -->
   <text x="80" y="540" fill="#555" font-family="Helvetica Neue,Arial,sans-serif" font-size="18" font-weight="500" letter-spacing="3">72HR DELIVERY</text>
   <text x="360" y="540" fill="#333" font-family="Helvetica Neue,Arial,sans-serif" font-size="18" font-weight="500">|</text>
-  <text x="400" y="540" fill="#555" font-family="Helvetica Neue,Arial,sans-serif" font-size="18" font-weight="500" letter-spacing="3">FROM $1,500</text>
+  <text x="400" y="540" fill="#555" font-family="Helvetica Neue,Arial,sans-serif" font-size="18" font-weight="500" letter-spacing="3">FROM $1,999</text>
   <text x="640" y="540" fill="#333" font-family="Helvetica Neue,Arial,sans-serif" font-size="18" font-weight="500">|</text>
   <text x="680" y="540" fill="#555" font-family="Helvetica Neue,Arial,sans-serif" font-size="18" font-weight="500" letter-spacing="3">10% DEPOSIT</text>
   <text x="920" y="540" fill="#333" font-family="Helvetica Neue,Arial,sans-serif" font-size="18" font-weight="500">|</text>

@@ -10,12 +10,23 @@ class Handler(http.server.SimpleHTTPRequestHandler):
     def translate_path(self, path):
         p = path.split("?", 1)[0].split("#", 1)[0]
         fs = super().translate_path(p)
-        # extensionless, non-directory request -> serve the matching .html
-        if p != "/" and not os.path.splitext(p)[1] and not os.path.isdir(fs):
-            html = fs + ".html"
-            if os.path.exists(html):
+        if p != "/" and not os.path.splitext(p)[1]:
+            # /blog or /blog/ -> blog.html, even though a blog/ folder exists (like Vercel cleanUrls)
+            html = fs.rstrip("/" + os.sep) + ".html"
+            if os.path.exists(html) and not os.path.exists(os.path.join(fs, "index.html")):
                 return html
         return fs
+
+    def send_head(self):
+        # /blog/ -> 308 to /blog, like Vercel's trailingSlash:false (keeps relative asset paths working)
+        p = self.path.split("?", 1)[0].split("#", 1)[0]
+        if p.endswith("/") and p != "/" and os.path.isfile(self.translate_path(p)):
+            q = self.path[len(p):]
+            self.send_response(308)
+            self.send_header("Location", p.rstrip("/") + q)
+            self.end_headers()
+            return None
+        return super().send_head()
 
     def end_headers(self):
         # never cache during local dev so CSS/HTML edits show immediately
