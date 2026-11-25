@@ -1592,3 +1592,16 @@ h1 em,h2 em,h3 em,.display em,.section-title em,.final-title em,.split-text h2 e
   .wall-col:nth-child(3){display:none}
   .hero-wall::after{background:linear-gradient(0deg,#000 0%,rgba(0,0,0,.85) 45%,rgba(0,0,0,.2) 75%,#000 100%)}
 }
+
+/* ===== FAQ: answer-first, for people and AI answer engines ===== */
+.qa-list{border-top:1px solid var(--oa-line)}
+.qa-item{border-bottom:1px solid var(--oa-line)}
+.qa-item summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:26px 0;font-family:var(--display);font-size:18px;font-weight:500;letter-spacing:-.015em;line-height:1.35;color:var(--oa-text)}
+.qa-item summary::-webkit-details-marker{display:none}
+.qa-item summary::after{content:"";flex:none;width:12px;height:12px;color:var(--oa-mute);background:linear-gradient(currentColor,currentColor) center/100% 1.5px no-repeat,linear-gradient(currentColor,currentColor) center/1.5px 100% no-repeat;transition:transform .25s ease}
+.qa-item[open] summary::after{transform:rotate(45deg)}
+.qa-item summary:hover::after{color:var(--oa-text)}
+.qa-item summary:focus-visible{outline:2px solid var(--oa-text);outline-offset:4px;border-radius:4px}
+.qa-item p{margin:0;padding:0 40px 28px 0;font-size:16px;line-height:1.6;color:var(--oa-mute);max-width:62ch;text-wrap:pretty}
+.faq-sec{border-top:1px solid var(--oa-line)}
+@media(max-width:600px){.qa-item summary{padding:22px 0;font-size:17px}.qa-item p{padding-right:0}}

@@ -1,0 +1,158 @@
+# NearBlack
+
+> NearBlack (nearblack.com) is an AI-native web design and online presence studio for small and mid-sized businesses in the United States. It builds custom websites and makes businesses easy to find and choose on Google, Google Maps and AI assistants such as ChatGPT, Claude, Gemini and Perplexity. Sites go live in about 72 hours, at fixed prices from $1,999.
+
+NearBlack's pitch: help small and medium-sized businesses stand out, get discovered, win the business already within their reach, and position themselves for growth. AI runs through the work (research, copy, code and testing), so a small senior team ships in days what agencies quote in months, and people with taste make every call that matters.
+
+## Key facts
+
+- Company: NearBlack LLC, a Florida limited liability company based in St. Petersburg, Florida
+- Serves: small and mid-sized businesses across the United States (clients include companies in Georgia, North Carolina, Hawaii and Maine)
+- Pricing: fixed price, one-time. Business $1,999, Growth $3,999, Authority $7,999
+- Payment: 10% deposit to start, balance only when the site goes live
+- Speed: most sites go live in about 72 hours; Authority projects take about a week
+- Every package includes SEO setup, Google Business Profile optimization and a site built to be read by AI assistants (AEO)
+- Clients own their domain, content and code; sites are hosted on Vercel with code on GitHub
+- Contact: hello@nearblack.com, the project form at https://nearblack.com/contact, or a 15-minute call at https://calendly.com/hello-nearblack/15-minute-meeting
+
+## Services
+
+- Website design: Your website is the first meeting most customers have with you. We build it custom and fast, so visitors understand what you do in five seconds and know exactly how to reach you.
+- SEO: We structure your pages, titles and data so Google knows what you do and where you do it. You show up when customers are already searching, without paying for every click.
+- AEO (answer engine optimization): More people now ask ChatGPT, Claude or Gemini who to hire. We make your business easy for those assistants to read and trust, so you're the name in the answer.
+- Google Business Profile optimization: Your Maps listing is often where local customers decide. We set it up properly and keep reviews coming, so people nearby call you first.
+- Lead capture: A clear next step on every page, and inquiries that reach your inbox in seconds with spam filtered out. You stop losing customers you already had.
+- Brand and print: A sharper logo, business cards and email signatures that match your site, so you look as established in person as you do online.
+- AI integrations: Practical automations for your inbox, your reviews and your most common questions. You reply faster, without another hire.
+- Hosting and care: Fast, secure hosting with backups and instant rollbacks. Send us a change and it's live within 24 hours.
+
+## Packages
+
+- [Business, $1,999](https://nearblack.com/pricing#business): Look credible and get found by the customers already searching for you. Live in about 3 days. Includes: Up to 6 custom pages, Copywriting assistance, Google Business Profile optimization, Business email address, Full SEO setup, 2 rounds of revisions.
+- [Growth, $3,999](https://nearblack.com/pricing#growth): Turn visitors into inquiries and rank for more than your name. Live in about 5 days. Includes: Everything in Business, Up to 10 custom pages, Blog or Substack setup, Lead capture form, Advanced SEO optimization, 6 months of hosting, 3 rounds of revisions.
+- [Authority, $7,999](https://nearblack.com/pricing#authority): A premium presence that outclasses everyone in your market. Live in about 7 days. Includes: Everything in Growth, Up to 20 custom pages, Custom site architecture, Advanced conversion optimization, Booking system integration, Content migration, Competitor analysis, 12 months of hosting, 6 months of monthly maintenance, Priority support.
+
+## Ongoing care and add-ons
+
+- Hosting: $49 per month. Vercel hosting with your code on GitHub: backups, version history, instant rollbacks, uptime monitoring and SSL.
+- Maintenance session: $99. Send a list of changes and they're handled within 24 hours.
+- Hosting + Maintenance: $129 per month. Hosting plus one monthly maintenance session.
+- Content and blog: $199 per month. Two SEO-optimized posts each month, written in your voice.
+- Additional page: $200. Extra pages beyond your package, in the same design system.
+- Logo refresh: $300. A cleaner version of your logo, or a quiet reinvention.
+- SEO setup: $199. One-time optimization at launch: meta tags, page titles and site structure.
+- Business Profile setup: $300. Google Business Profile, Yelp, Nextdoor and Apple Maps claimed, verified and optimized to rank.
+- Substack setup: $199. Full Substack configuration including a custom domain.
+- Social media management: $750 per month. Instagram and Facebook, two posts a week on each, written and scheduled in your voice.
+- AI integrations: $500 per month. Automations for your inbox, reviews and FAQs, plus a Telegram bot that answers questions about your business.
+- LLM and Google Ads management: $1,500 per month. Flat-fee Google Ads management plus visibility in ChatGPT, Claude and AI Overviews. $5,000 per month minimum ad spend.
+
+## How a project works
+
+1. The brief: Send a short email to hello@nearblack.com: what you do, who it's for and what's currently broken. No questionnaire, no intake call.
+2. The build: We build a real, clickable site on a private link. No mood boards, no Figma. You see it and click through it within days.
+3. The review: Give feedback however you like: a voice memo, a numbered list or a quick call. Changes are made the same day, and most projects need one round.
+4. The launch: We connect your domain and deploy to Vercel with your code on GitHub. You pay the balance only then.
+
+## Selected work
+
+- [Genesis Films](https://nearblack.com/genesis) (genesisautofilms.com): an Atlanta XPEL paint protection film, window tint and ceramic coating company that serves car dealerships and collision centers. NearBlack built a dealer-first website, SEO with seven structured data types, AEO with an llms.txt file, a Google review flow, a new emblem and print. Delivered in two days.
+- [OBX Home Solutions](https://nearblack.com/obxhs) (obxhs.com): an Outer Banks, North Carolina finish carpenter that went from a login-walled Facebook page to a real website found on Google, and landed a new paying client within two days of launch. Built in three days on the Growth package.
+- [Quench Water Co](https://nearblack.com/quench): a Hawaiian water delivery company whose tired Wix template was refreshed into a brand that matches its storefronts. Shipped in one day.
+- [Omnes](https://nearblack.com/case-study) (omnes.io): after paying an agency six figures and waiting six months, the founders rebuilt the site themselves in a week for under $5,000. That rebuild is why NearBlack exists.
+- Jinu (jinu.app): a local marketplace for vehicles, property, jobs and services, designed and built from the ground up.
+- Kowo (kowo.app): the launch website for Kowo, an AI teammate that answers calls and books work for service businesses. Kowo is a separate company and a NearBlack client.
+
+## Guides
+
+- [NearBlack vs Wix: What's the Right Choice for Your Business?](https://nearblack.com/blog/nearblack-vs-wix): Already on Wix and frustrated? How a custom NearBlack site compares to a DIY builder on cost, speed, quality, SEO and who owns the site.
+- [NearBlack vs Squarespace: Why Your Site Looks Like Everyone Else's](https://nearblack.com/blog/nearblack-vs-squarespace): Squarespace looks great on day one. Two years in, every other business using the same template looks exactly like you. Here's what to do about it.
+- [NearBlack vs Webflow: Build It Yourself or Have It Done Right?](https://nearblack.com/blog/nearblack-vs-webflow): Webflow is genuinely powerful. It also takes 40-100+ hours to learn. Here's who should use which and when to hand it to a professional studio instead.
+- [NearBlack vs Marketing Agencies: Same Result, Different Price Tag](https://nearblack.com/blog/nearblack-vs-marketing-agencies): An agency quoted $40,000 and six months. A lean, AI-native studio can do the same job in days for $3,999. Here's why, and when an agency is still right.
+- [How Much Does a Website Redesign Cost in 2026?](https://nearblack.com/blog/how-much-does-a-website-redesign-cost): A complete breakdown of website redesign costs from DIY ($0) to enterprise agency ($150,000+), with honest numbers at every tier and what you actually get.
+- [Website Refresh vs. Full Rebuild: Which One Do You Actually Need?](https://nearblack.com/blog/website-refresh-vs-rebuild): Most businesses think they need a full rebuild, but a refresh is often enough. How to tell the difference, and what it means for budget, timeline and SEO.
+
+## Pages
+
+- [Home](https://nearblack.com/)
+- [Pricing](https://nearblack.com/pricing)
+- [Process](https://nearblack.com/process)
+- [Portfolio](https://nearblack.com/portfolio)
+- [Blog](https://nearblack.com/blog)
+- [Contact](https://nearblack.com/contact)
+- [Terms of Use](https://nearblack.com/terms)
+- [Privacy Policy](https://nearblack.com/privacy)
+
+## Frequently asked questions
+
+### What does NearBlack do?
+
+NearBlack is an AI-native web design and online presence studio for small and mid-sized businesses. We build custom websites and set up everything that gets a business found and chosen: SEO, AEO for AI assistants, Google Business Profile optimization, lead capture and brand.
+
+### How much does a website from NearBlack cost?
+
+Every package has a fixed price: Business is $1,999, Growth is $3,999 and Authority is $7,999. You pay a 10% deposit to start and the balance only when your site goes live.
+
+### How long does it take?
+
+Days, not months. Most sites are live in about 72 hours, and larger Authority projects take about a week. You see a working site on a private link early, not a mockup.
+
+### What is AEO?
+
+AEO, or answer engine optimization, makes your business easy for AI assistants like ChatGPT, Claude, Gemini and Perplexity to read, trust and recommend. More customers now ask an assistant who to hire, so being named in that answer matters as much as ranking on Google.
+
+### What is the difference between SEO and AEO?
+
+SEO helps your pages rank in Google's search results. AEO helps your business get named inside the answers AI assistants give. Both rely on clear pages, structured data and consistent business facts, and every NearBlack site is built for both.
+
+### Why does my Google Business Profile matter?
+
+For a local business, the Google Business Profile is what shows up in Google Maps and the local results, and it is often where customers decide who to call. We set it up or clean it up, choose the right categories and make it easy for happy customers to leave reviews.
+
+### Do you work with businesses outside Florida?
+
+Yes. NearBlack is based in St. Petersburg, Florida, and works with businesses across the United States, from Atlanta to the Outer Banks to Hawaii. Everything runs over email and short calls.
+
+### Do I own my website?
+
+Yes. You own your domain, your content and your code. Sites run on Vercel with the code on GitHub, so you can move them anywhere, any time.
+
+### Are there monthly fees?
+
+Packages are a one-time price. Growth includes 6 months of hosting, and Authority includes 12 months of hosting and 6 months of maintenance. After that, hosting is $49 a month, or $129 a month with a monthly maintenance session.
+
+### How does payment work?
+
+A 10% deposit starts your project. You pay the balance only when your new site goes live.
+
+### Is SEO included in every package?
+
+Yes. Every package includes the SEO setup: page titles and descriptions, structured data, a sitemap and Google Business Profile optimization. Every site is also built to be read by AI assistants like ChatGPT and Gemini. Growth and Authority add advanced SEO.
+
+### Which package is right for my business?
+
+Business suits most local service businesses that need a credible site of up to 6 pages. Growth is for businesses that want more leads and to rank for more searches, with up to 10 pages, a blog and a lead capture form. Authority is for established companies that need up to 20 pages, content migration, booking and a competitor analysis.
+
+### What if I don't love it?
+
+We'll keep revising until you do. We don't stop until you're happy with the result, and we've never had a client walk away.
+
+### Who writes the copy?
+
+We do the first pass. You polish. On the Business tier and above, we include proper copywriting assistance.
+
+### Who hosts it?
+
+We deploy on Vercel with your code stored on GitHub. Your site auto-deploys on every update, with version history, instant rollbacks, and automatic backups. If something ever breaks, we roll it back in seconds.
+
+### Can I edit it myself later?
+
+Yes. We build on modern CMS platforms that a non-technical owner can comfortably update. We give you a one-page guide.
+
+### What about my existing domain?
+
+We handle the transfer. You keep the domain. You always own everything.
+
+### Can you work faster than 72 hours?
+
+Sometimes. Most projects already ship in about 72 hours. If you're working against a hard deadline, tell us in your first email and we'll be honest about what's possible.
